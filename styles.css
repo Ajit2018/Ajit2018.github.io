@@ -2076,7 +2076,7 @@ body.home-mode main{
 }
 .patent-figure-main img{height:194px;padding:5px}
 .patent-figure-system img{height:76px;padding:5px 8px 1px}
-.perfectcare-mini img{height:88px;padding:3px 5px 0}
+.perfectcare-mini img{height:96px;padding:2px;object-fit:contain}
 .patent-figure figcaption,.perfectcare-mini figcaption{
   padding:5px 7px 6px;
   border-top:1px solid #edf1f5;
