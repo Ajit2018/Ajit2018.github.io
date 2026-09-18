@@ -102,11 +102,135 @@ body.home-mode main{
   border-radius:13px;
 }
 
+.home-mobile-story{display:none}
+
 @media(max-width:720px){
-  body.home-mode main{height:calc(100dvh - 67px)}
-  .home-infographic-hero{padding:6px 0}
-  .hero-infographic-card{padding:6px;border-radius:15px}
-  .hero-infographic-image{border-radius:10px}
+  html.home-mode,
+  html.home-mode body{
+    height:auto;
+    min-height:100%;
+    overflow:auto!important;
+  }
+  body.home-mode{
+    height:auto;
+    min-height:100dvh;
+    overflow:auto!important;
+  }
+  body.home-mode main{
+    height:auto;
+    min-height:calc(100dvh - 67px);
+    overflow:visible;
+  }
+  .home-view{
+    height:auto;
+    min-height:calc(100dvh - 67px);
+    overflow:visible;
+  }
+  .home-shell{
+    height:auto;
+    min-height:0;
+    display:block;
+  }
+  .home-infographic-hero{
+    height:auto;
+    display:block;
+    padding:18px 0 26px;
+  }
+  .hero-infographic-card{display:none}
+
+  .home-mobile-story{
+    display:block;
+    width:100%;
+    max-width:560px;
+    margin:0 auto;
+  }
+  .home-mobile-kicker{
+    margin-bottom:5px;
+    color:var(--blue);
+    font-size:12px;
+    font-weight:900;
+    letter-spacing:.09em;
+    text-transform:uppercase;
+  }
+  .home-mobile-story h2{
+    margin:0;
+    font-size:28px;
+    line-height:1.08;
+    letter-spacing:-.035em;
+  }
+  .home-mobile-intro{
+    margin:8px 0 14px;
+    color:var(--text);
+    font-size:15px;
+    line-height:1.45;
+  }
+  .home-mobile-steps{
+    display:grid;
+    gap:7px;
+  }
+  .home-mobile-steps article{
+    display:grid;
+    grid-template-columns:34px 1fr;
+    gap:9px;
+    align-items:center;
+    padding:9px 10px;
+    border:1px solid var(--line);
+    border-radius:12px;
+    background:#fff;
+    box-shadow:var(--shadow-soft);
+  }
+  .home-mobile-steps article>span{
+    width:34px;
+    height:34px;
+    display:grid;
+    place-items:center;
+    border-radius:10px;
+    background:var(--blue-soft);
+    color:var(--blue);
+    font-size:11px;
+    font-weight:900;
+  }
+  .home-mobile-steps article:nth-child(2)>span{background:var(--cyan-soft);color:var(--cyan)}
+  .home-mobile-steps article:nth-child(3)>span{background:var(--green-soft);color:var(--green)}
+  .home-mobile-steps article:nth-child(4)>span{background:var(--coral-soft);color:var(--coral)}
+  .home-mobile-steps article:nth-child(5)>span{background:var(--amber-soft);color:var(--amber)}
+  .home-mobile-steps article:nth-child(6)>span{background:var(--violet-soft);color:var(--violet)}
+  .home-mobile-steps b{
+    display:block;
+    font-size:14px;
+    line-height:1.2;
+  }
+  .home-mobile-steps small{
+    display:block;
+    margin-top:2px;
+    color:var(--muted);
+    font-size:12px;
+    line-height:1.3;
+  }
+  .home-mobile-proof{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:7px;
+    margin-top:10px;
+  }
+  .home-mobile-proof span{
+    padding:9px 10px;
+    border:1px solid var(--line);
+    border-radius:11px;
+    background:linear-gradient(135deg,#fff,#f7fbff);
+  }
+  .home-mobile-proof b{
+    display:block;
+    color:var(--blue);
+    font-size:18px;
+    line-height:1;
+  }
+  .home-mobile-proof small{
+    display:block;
+    margin-top:3px;
+    color:var(--muted);
+    font-size:11px;
+  }
 }
 /* HOME JOURNEY INFOGRAPHIC: END */
 
