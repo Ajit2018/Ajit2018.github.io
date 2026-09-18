@@ -23,7 +23,7 @@
     item('customer','Customer','secondary')+
     item('manufacturing','Manufacturing','secondary')+
     item('supply-chain','Supply Chain','planned')+
-    item('ai-transformation','AI Transformation','planned');
+    item('ai-transformation','AI Transformation','secondary');
 })();
 
 const menuButton=document.querySelector('[data-menu-button]');
