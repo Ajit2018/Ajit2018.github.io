@@ -1566,6 +1566,9 @@ body.home-mode main{
   .secondary-areas>div{position:static;width:100%;margin-top:7px;box-shadow:none}
   .finance-hero-copy h1{font-size:29px}
   .finance-section-hero h1{font-size:27px}
+  .finance-signal-row{grid-template-columns:1fr}
+  .finance-signal-row small{font-size:9.5px}
+  .finance-signal-row b{font-size:12px}
   .finance-kpi-strip{grid-template-columns:1fr 1fr}
   .finance-overview-grid,.finance-method-grid,.finance-ownership-grid,
   .finance-problem-grid,.finance-impact-grid,.finance-impact-lessons,.finance-governance-grid{grid-template-columns:1fr}
