@@ -75,6 +75,7 @@ body.home-mode main{
 }
 
 .hero-infographic-card{
+  position:relative;
   margin:0;
   height:100%;
   max-height:100%;
@@ -100,6 +101,48 @@ body.home-mode main{
   max-height:100%;
   object-fit:contain;
   border-radius:13px;
+}
+
+.home-desktop-actions{
+  position:absolute;
+  right:3.4%;
+  bottom:14.8%;
+  z-index:4;
+  display:flex;
+  align-items:center;
+  gap:7px;
+  padding:5px;
+  border:1px solid #d9e6f2;
+  border-radius:999px;
+  background:rgba(255,255,255,.95);
+  box-shadow:0 8px 24px rgba(31,66,102,.12);
+  backdrop-filter:blur(7px);
+}
+.home-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:34px;
+  padding:7px 13px;
+  border-radius:999px;
+  border:1px solid #d5e2ef;
+  background:#fff;
+  color:#315a86;
+  text-decoration:none;
+  font-size:12.5px;
+  line-height:1;
+  font-weight:900;
+  white-space:nowrap;
+  transition:.16s ease;
+}
+.home-cta:hover{
+  transform:translateY(-1px);
+  box-shadow:0 5px 14px rgba(31,66,102,.12);
+}
+.home-cta.primary{
+  border-color:var(--blue);
+  background:var(--blue);
+  color:#fff;
 }
 
 .home-mobile-story{display:none}
@@ -137,6 +180,7 @@ body.home-mode main{
     padding:18px 0 26px;
   }
   .hero-infographic-card{display:none}
+  .home-desktop-actions{display:none}
 
   .home-mobile-story{
     display:block;
