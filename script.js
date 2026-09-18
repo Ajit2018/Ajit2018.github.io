@@ -87,6 +87,8 @@ function activateSiteView(id,{updateHash=false,replaceHash=false}={}){
 
 siteLinks.forEach(link=>link.addEventListener('click',event=>{
   if(!siteViews.length)return;
+  const href=link.getAttribute('href')||'';
+  if(!href.startsWith('#'))return;
   event.preventDefault();
   activateSiteView(link.dataset.siteLink,{updateHash:true});
   mainNav?.classList.remove('open');
