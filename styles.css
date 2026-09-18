@@ -596,3 +596,179 @@ body.home-mode main{
   .signature-icon{width:48px;height:48px;border-radius:13px;font-size:13px}
 }
 /* CAREER JOURNEY: END */
+
+
+/* BANKING CASE V2: START */
+.banking-page{background:#f6faff}
+.banking-page .site-header{position:sticky;top:0}
+.banking-page .tab-nav-wrap{box-shadow:0 5px 14px rgba(31,66,102,.05)}
+.banking-main{padding:22px 0 44px;min-height:calc(100vh - 190px)}
+.banking-shell{max-width:1180px}
+.banking-panel{animation:bankFade .18s ease}
+@keyframes bankFade{from{opacity:.35;transform:translateY(3px)}to{opacity:1;transform:none}}
+.banking-panel-hero{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:center;
+  padding:18px 0 20px;
+}
+.banking-hero-copy h1,.banking-section-hero h1{
+  margin:0 0 10px;font-size:42px;line-height:1.07;letter-spacing:-.035em;
+}
+.banking-lead{margin:0;color:var(--text);font-size:17px;line-height:1.58;max-width:760px}
+.banking-evidence-note{
+  margin-top:13px;padding:10px 12px;border-radius:11px;
+  background:var(--amber-soft);border:1px solid #eed89e;color:#6b531f;
+  font-size:13px;line-height:1.42;
+}
+.rm-cockpit{
+  background:linear-gradient(145deg,#e8f7ff,#f2edff);
+  border:1px solid #cfe2f3;border-radius:20px;padding:16px;box-shadow:var(--shadow);
+}
+.cockpit-title{display:flex;justify-content:space-between;gap:10px;align-items:end;margin-bottom:11px}
+.cockpit-title span{font-size:11px;text-transform:uppercase;letter-spacing:.09em;font-weight:900;color:var(--muted)}
+.cockpit-title b{font-size:15px}
+.cockpit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.cockpit-card,.cockpit-action{background:#fff;border:1px solid rgba(217,229,239,.95);border-radius:12px;padding:11px}
+.cockpit-card small,.cockpit-action small{display:block;color:var(--muted);font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;font-weight:850}
+.cockpit-card strong{display:block;margin-top:4px;font-size:13px;line-height:1.2}
+.mini-line{display:block;height:4px;border-radius:999px;margin-top:12px;background:#dfe8f0;position:relative;overflow:hidden}
+.mini-line:before{content:"";display:block;height:100%;border-radius:inherit;width:72%}
+.mini-line.blue:before{background:linear-gradient(90deg,var(--blue),var(--cyan))}
+.mini-line.amber:before{background:linear-gradient(90deg,var(--amber),var(--coral));width:55%}
+.mini-line.green:before{background:linear-gradient(90deg,var(--green),var(--cyan));width:82%}
+.cockpit-action{grid-column:1/-1;background:linear-gradient(110deg,#fff,var(--blue-soft))}
+.cockpit-action b{display:block;margin-top:3px;font-size:13px}
+.banking-story-flow{
+  display:flex;align-items:stretch;gap:7px;padding:10px;margin:0 0 18px;
+  background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow-soft);overflow-x:auto;
+}
+.banking-story-flow>div{flex:1;min-width:145px;padding:10px;border-radius:11px;background:#f8fbfe}
+.banking-story-flow>div.human{background:var(--violet-soft)}
+.banking-story-flow span{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--blue);color:#fff;font-size:11px;font-weight:900}
+.banking-story-flow b{display:block;margin-top:6px;font-size:14px}
+.banking-story-flow small{display:block;color:var(--muted);font-size:11.5px;line-height:1.25;margin-top:2px}
+.banking-story-flow i{display:grid;place-items:center;color:#9aabba;font-style:normal;font-weight:900}
+.banking-data-split{display:grid;grid-template-columns:1fr 36px 1fr;gap:10px;align-items:stretch;margin:0 0 24px}
+.data-source-card{padding:17px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow-soft)}
+.data-source-card.sandbox{border-top:5px solid var(--blue)}
+.data-source-card.synthetic{border-top:5px solid var(--violet)}
+.source-badge{font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:900;color:var(--muted)}
+.data-source-card h3{margin:4px 0 9px;font-size:18px}
+.source-numbers{display:flex;gap:22px;margin-bottom:8px}
+.source-numbers b{display:block;font-size:24px;color:var(--blue);line-height:1}
+.synthetic .source-numbers b{color:var(--violet)}
+.source-numbers small{display:block;font-size:11px;color:var(--muted);margin-top:4px}
+.data-source-card p{margin:0;color:var(--text);font-size:13px;line-height:1.45}
+.data-source-arrow{display:grid;place-items:center;font-size:24px;color:#8aa0b4;font-weight:900}
+.banking-findings-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:12px}
+.banking-findings-head h2{margin:0;font-size:27px;line-height:1.15}
+.banking-findings-head p{max-width:450px;text-align:right;margin:0;color:var(--muted);font-size:13px}
+.banking-findings-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.finding-card{padding:16px;background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow-soft)}
+.finding-card.forecast{border-top:5px solid var(--blue)}
+.finding-card.cluster{border-top:5px solid var(--green)}
+.finding-card.alert{border-top:5px solid var(--coral)}
+.finding-icon{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:var(--blue-soft);color:var(--blue);font-weight:950;font-size:18px}
+.cluster .finding-icon{background:var(--green-soft);color:var(--green)}
+.alert .finding-icon{background:var(--coral-soft);color:var(--coral)}
+.finding-card h3{margin:9px 0 5px;font-size:17px}
+.finding-card p{margin:0;color:var(--text);font-size:13px;line-height:1.45}
+.finding-card>span{display:block;margin-top:10px;padding-top:8px;border-top:1px solid #e9eff5;color:var(--muted);font-size:11.5px;font-weight:800}
+.banking-conclusion{margin-top:14px;padding:15px 17px;border-radius:15px;background:linear-gradient(110deg,var(--blue-soft),var(--violet-soft));border:1px solid #d8e0f5}
+.conclusion-label{font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:900;color:var(--blue)}
+.banking-conclusion p{margin:5px 0 0;color:var(--text);font-size:14px}
+.banking-section-hero{padding:12px 0 18px;display:grid;grid-template-columns:1fr;gap:10px}
+.banking-section-hero.compact{max-width:930px}
+.banking-section-hero p{margin:0;max-width:850px;color:var(--text);font-size:16px}
+.problem-visual{margin-top:7px;display:grid;grid-template-columns:170px 1fr 220px;gap:10px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px;box-shadow:var(--shadow-soft)}
+.problem-account,.problem-question{padding:12px;border-radius:11px;font-weight:850;font-size:13px;text-align:center}
+.problem-account{background:var(--blue-soft);color:var(--blue)}
+.problem-question{background:var(--violet-soft);color:var(--violet)}
+.problem-signals{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.problem-signals span{padding:8px;border-radius:9px;background:#f6f9fc;border:1px solid #e3ebf3;font-size:11.5px;font-weight:800;text-align:center;color:#486581}
+.bad-good-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.bad-intelligence,.good-intelligence{padding:18px;border-radius:16px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-soft)}
+.bad-intelligence{border-top:5px solid var(--coral)}
+.good-intelligence{border-top:5px solid var(--green)}
+.comparison-label{text-transform:uppercase;letter-spacing:.08em;font-size:11px;font-weight:900;color:var(--muted)}
+.bad-good-grid h3{font-size:18px;margin:4px 0 8px}
+.bad-good-grid ul{margin:0;padding-left:20px}
+.bad-good-grid li{font-size:13.5px;color:var(--text);margin:4px 0}
+.manager-decision-flow{display:flex;gap:7px;align-items:stretch;margin:14px 0}
+.manager-decision-flow>div{flex:1;padding:12px;border-radius:12px;background:#fff;border:1px solid var(--line)}
+.manager-decision-flow b{display:block;font-size:13px}
+.manager-decision-flow span{display:block;margin-top:3px;font-size:11.5px;color:var(--muted);line-height:1.3}
+.manager-decision-flow i{display:grid;place-items:center;color:#91a4b6;font-style:normal;font-weight:900}
+.bank-architecture-visual{display:flex;align-items:stretch;gap:6px;margin:4px 0 16px;overflow-x:auto}
+.architecture-stage{min-width:145px;flex:1;padding:13px;border-radius:13px;background:#fff;border:1px solid var(--line);border-top:5px solid var(--green)}
+.architecture-stage.planned{border-top-color:var(--amber);border-style:dashed}
+.architecture-stage span{font-size:10px;font-weight:900;color:var(--muted)}
+.architecture-stage b{display:block;margin-top:3px;font-size:13.5px}
+.architecture-stage small{display:block;margin-top:4px;font-size:11px;color:var(--muted);line-height:1.25}
+.bank-architecture-visual>i{display:grid;place-items:center;color:#91a4b6;font-style:normal;font-weight:900}
+.architecture-evidence-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.architecture-evidence-grid>div{padding:15px;background:#fff;border:1px solid var(--line);border-radius:14px}
+.architecture-evidence-grid h3{margin:5px 0;font-size:15px}
+.architecture-evidence-grid p{margin:0;font-size:12.5px;color:var(--text);line-height:1.4}
+.results-dashboard{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.result-visual-card{padding:16px;background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow-soft)}
+.result-visual-card.warn{border-top:5px solid var(--amber)}
+.result-visual-card.bad{border-top:5px solid var(--coral)}
+.result-kpi{font-size:27px;font-weight:950;color:var(--blue);line-height:1}
+.warn .result-kpi{color:var(--amber)} .bad .result-kpi{color:var(--coral)}
+.result-visual-card h3{margin:6px 0 10px;font-size:14px;line-height:1.2}
+.result-visual-card p{margin:10px 0 0;color:var(--text);font-size:12.5px;line-height:1.4}
+.result-bar{height:7px;border-radius:999px;background:#e8eef4;overflow:hidden}
+.result-bar span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--blue),var(--cyan))}
+.warn .result-bar span{background:linear-gradient(90deg,var(--amber),#e7a72d)}
+.bad .result-bar span{background:linear-gradient(90deg,var(--coral),#f4a089)}
+.cluster-dots{display:flex;gap:4px;height:16px;align-items:center}
+.cluster-dots i{width:12px;height:12px;border-radius:50%;background:var(--green)}
+.cluster-dots i:nth-child(2){opacity:.85}.cluster-dots i:nth-child(3){opacity:.72}.cluster-dots i:nth-child(4){opacity:.6}.cluster-dots i:nth-child(5){opacity:.48}.cluster-dots i:nth-child(6){opacity:.36}
+.results-lessons{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.results-lessons>div{padding:14px;border-radius:13px;background:#fff;border:1px solid var(--line)}
+.results-lessons b{font-size:14px}
+.results-lessons p{margin:4px 0 0;font-size:12.5px;color:var(--text);line-height:1.4}
+.technical-pipeline{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.technical-pipeline article{padding:15px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-soft)}
+.technical-pipeline article>span{display:inline-block;padding:4px 7px;border-radius:7px;background:var(--blue-soft);color:var(--blue);font-size:10px;font-weight:900;letter-spacing:.05em}
+.technical-pipeline h3{margin:7px 0 5px;font-size:15px}
+.technical-pipeline p{margin:0;font-size:12.5px;line-height:1.42;color:var(--text)}
+.evidence-boundary-visual{display:grid;grid-template-columns:1fr 55px 1fr;gap:10px;align-items:stretch}
+.boundary-card{padding:17px;background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow-soft)}
+.boundary-card.real{border-top:5px solid var(--green)}
+.boundary-card.synthetic{border-top:5px solid var(--violet)}
+.boundary-icon{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;background:var(--green-soft);color:var(--green);font-weight:950;font-size:13px}
+.synthetic .boundary-icon{background:var(--violet-soft);color:var(--violet);font-size:9px}
+.boundary-card h3{margin:8px 0;font-size:17px}
+.boundary-card ul{margin:0;padding-left:19px}
+.boundary-card li{font-size:13px;color:var(--text);margin:4px 0}
+.boundary-divider{display:grid;place-items:center;font-size:26px;color:#9aabba;font-weight:900}
+.responsibility-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.responsibility-grid>div{padding:14px;border-radius:13px;background:#fff;border:1px solid var(--line)}
+.responsibility-grid h3{margin:0 0 5px;font-size:14px}
+.responsibility-grid p{margin:0;color:var(--text);font-size:12.5px;line-height:1.4}
+@media(max-width:950px){
+  .banking-panel-hero{grid-template-columns:1fr}
+  .banking-findings-grid,.results-lessons,.technical-pipeline{grid-template-columns:1fr 1fr}
+  .architecture-evidence-grid,.results-dashboard,.responsibility-grid{grid-template-columns:1fr 1fr}
+  .problem-visual{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .banking-main{padding-top:14px}
+  .banking-hero-copy h1,.banking-section-hero h1{font-size:31px}
+  .cockpit-grid{grid-template-columns:1fr}
+  .cockpit-action{grid-column:auto}
+  .banking-data-split{grid-template-columns:1fr}
+  .data-source-arrow{transform:rotate(90deg)}
+  .banking-findings-head{display:block}
+  .banking-findings-head p{text-align:left;margin-top:5px}
+  .bad-good-grid,.results-dashboard,.responsibility-grid,.architecture-evidence-grid{grid-template-columns:1fr}
+  .manager-decision-flow{overflow-x:auto}
+  .manager-decision-flow>div{min-width:170px}
+  .evidence-boundary-visual{grid-template-columns:1fr}
+  .boundary-divider{transform:rotate(90deg)}
+}
+@media(max-width:520px){
+  .banking-findings-grid,.results-lessons,.technical-pipeline{grid-template-columns:1fr}
+}
+/* BANKING CASE V2: END */
