@@ -17,29 +17,76 @@ footer{padding:28px 0;border-top:1px solid var(--line);font-size:14px;color:var(
 @media(max-width:410px){.hero h1{font-size:38px}.supporting-line{font-size:15px}.lead{font-size:18px}.journey{grid-template-columns:1fr}.cover{height:170px}.case-header h1{font-size:34px}.identity b{font-size:15px}.identity-mark{width:38px;height:38px}.motif span{font-size:12px}.contact-band{padding:22px}.actions .btn{flex:1 1 auto}}
 
 /* HOME JOURNEY INFOGRAPHIC: START */
+.home-sr-only{
+  position:absolute!important;
+  width:1px!important;
+  height:1px!important;
+  padding:0!important;
+  margin:-1px!important;
+  overflow:hidden!important;
+  clip:rect(0,0,0,0)!important;
+  white-space:nowrap!important;
+  border:0!important;
+}
+
+body.home-mode{
+  overflow:hidden;
+}
+
 .home-view{
+  height:calc(100dvh - 79px);
+  min-height:0;
+  overflow:hidden;
   background:
-    radial-gradient(circle at 84% 12%,rgba(112,72,232,.08),transparent 28%),
-    radial-gradient(circle at 15% 20%,rgba(8,145,178,.06),transparent 24%),
+    radial-gradient(circle at 84% 12%,rgba(112,72,232,.06),transparent 28%),
+    radial-gradient(circle at 15% 20%,rgba(8,145,178,.05),transparent 24%),
     linear-gradient(180deg,#fff,#f7fbff);
 }
-.home-infographic-hero{padding:28px 0 34px}
-.hero-copy{max-width:920px;margin:0 auto 14px;text-align:center}
-.hero-copy .eyebrow{margin-bottom:8px}
-.hero-copy h1{margin:0 0 10px;font-size:clamp(34px,4.2vw,52px);line-height:1.06;letter-spacing:-.035em;color:var(--ink)}
-.hero-intro{margin:0 auto;max-width:850px;font-size:18px;line-height:1.58;color:var(--text)}
-.hero-infographic-card{margin:18px auto 14px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:10px;box-shadow:var(--shadow);overflow:hidden}
-.hero-infographic-image{display:block;width:100%;height:auto;border-radius:16px}
-.hero-action-row{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:16px}
-@media(max-width:720px){
-  .home-infographic-hero{padding:22px 0 26px}
-  .hero-copy h1{font-size:clamp(30px,8vw,40px)}
-  .hero-intro{font-size:16px}
-  .hero-infographic-card{margin-top:16px;padding:7px;border-radius:18px}
-  .hero-infographic-image{border-radius:11px}
+
+.home-shell{
+  height:100%;
+  display:grid;
+  place-items:center;
 }
-@media(max-width:410px){
-  .home-infographic-hero{padding-top:18px}
-  .hero-action-row .btn{flex:1 1 auto}
+
+.home-infographic-hero{
+  width:100%;
+  height:100%;
+  display:grid;
+  place-items:center;
+  padding:10px 0;
+}
+
+.hero-infographic-card{
+  margin:0;
+  width:max-content;
+  max-width:100%;
+  max-height:100%;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:8px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+
+.hero-infographic-image{
+  display:block;
+  width:auto;
+  max-width:100%;
+  height:auto;
+  max-height:calc(100dvh - 105px);
+  object-fit:contain;
+  border-radius:13px;
+}
+
+@media(max-width:720px){
+  .home-view{height:calc(100dvh - 67px)}
+  .home-infographic-hero{padding:8px 0}
+  .hero-infographic-card{padding:6px;border-radius:15px}
+  .hero-infographic-image{
+    max-height:calc(100dvh - 87px);
+    border-radius:10px;
+  }
 }
 /* HOME JOURNEY INFOGRAPHIC: END */
