@@ -41,6 +41,10 @@ function activateSiteView(id,{updateHash=false,replaceHash=false}={}){
 
   if(homeProjectNav)homeProjectNav.hidden=target!=='projects';
 
+  const footer=document.querySelector('footer');
+  if(footer)footer.hidden=target==='home';
+  document.body.classList.toggle('home-mode',target==='home');
+
   if(updateHash){
     const url=`#${target}`;
     if(replaceHash)history.replaceState({view:target},'',url);
