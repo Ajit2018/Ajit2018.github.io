@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Banking Transaction Intelligence | Ajit Pal Singh — AI-Enabled Decision Intelligence</title><meta name="description" content="Banking Transaction Intelligence portfolio case study: ABN sandbox integration, PySpark, SQL, forecasting, behavioural clustering and explainable change detection."/><meta property="og:type" content="article"/><meta property="og:title" content="Banking Transaction Intelligence — Ajit Pal Singh"/><meta property="og:description" content="Explainable cash-flow, behavioural and change intelligence built from ABN sandbox schema fidelity and synthetic longitudinal evaluation."/><meta name="twitter:card" content="summary"/><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="../styles.css?v=20260918-BANK2"/></head>
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Banking Transaction Intelligence | Ajit Pal Singh — AI-Enabled Decision Intelligence</title><meta name="description" content="Banking Transaction Intelligence portfolio case study: ABN sandbox integration, PySpark, SQL, forecasting, behavioural clustering and explainable change detection."/><meta property="og:type" content="article"/><meta property="og:title" content="Banking Transaction Intelligence — Ajit Pal Singh"/><meta property="og:description" content="Explainable cash-flow, behavioural and change intelligence built from ABN sandbox schema fidelity and synthetic longitudinal evaluation."/><meta name="twitter:card" content="summary"/><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="../styles.css?v=20260918-BANK3"/></head>
 <body class="banking-page"><a class="skip-link" href="#case-content">Skip to case study</a><header class="site-header"><div class="shell topbar"><a class="identity" href="../index.html"><span class="identity-mark">APS</span><span><b>Ajit Pal Singh</b><small>AI-Enabled Decision Intelligence</small></span></a><button class="menu-btn" data-menu-button aria-label="Open menu" aria-expanded="false">☰</button><nav class="main-nav" data-main-nav aria-label="Main navigation"><a href="../index.html#home">Home</a><a class="active" href="../index.html#projects">Projects</a><a href="../index.html#experience">Career Journey</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a></nav></div>
 <div class="project-nav-wrap"><nav class="shell project-nav" aria-label="Project selection"><a class="case active" href="banking.html#overview">Banking</a><a class="live" href="pricing.html#overview">Pricing &amp; RGM</a><a class="planned" href="supply-chain.html#overview">Supply Chain</a><a class="planned" href="finance.html#overview">Finance</a><a class="planned" href="customer.html#overview">Customer</a><a class="planned" href="manufacturing.html#overview">Manufacturing</a><a class="planned" href="engineering.html#overview">Engineering</a><a class="planned" href="ai-transformation.html#overview">AI Transformation</a></nav></div>
 <div class="tab-nav-wrap"><nav class="shell tab-nav" role="tablist" aria-label="Banking case-study sections"><a href="#overview" data-tab-link="overview" role="tab">Overview</a><a href="#business-problem" data-tab-link="business-problem" role="tab">Business Problem</a><a href="#architecture" data-tab-link="architecture" role="tab">Architecture</a><a href="#results" data-tab-link="results" role="tab">Results</a><a href="#technical" data-tab-link="technical" role="tab">Technical Deep Dive</a><a href="#responsible-ai" data-tab-link="responsible-ai" role="tab">Responsible AI</a></nav></div></header>
@@ -34,46 +34,55 @@
         <div class="human"><span>5</span><b>Manager review</b><small>evidence before action</small></div>
       </div>
 
-      <div class="banking-data-split">
-        <div class="data-source-card sandbox">
-          <div class="source-badge">ABN developer sandbox</div>
-          <h3>API & schema credibility</h3>
-          <div class="source-numbers"><span><b>3</b><small>accounts</small></span><span><b>424</b><small>captured activities</small></span></div>
-          <p>Read-only endpoint integration, pagination, account/balance/activity structures and canonical schema handling.</p>
-        </div>
-        <div class="data-source-arrow">+</div>
-        <div class="data-source-card synthetic">
-          <div class="source-badge">Synthetic longitudinal evaluation</div>
-          <h3>Enough history to test methods honestly</h3>
-          <div class="source-numbers"><span><b>400</b><small>corporate accounts</small></span><span><b>≈564k</b><small>activities</small></span></div>
-          <p>15 months of controlled account history with hidden archetypes and injected events used only after modelling decisions were frozen.</p>
-        </div>
-      </div>
+      <div class="banking-overview-lower">
+        <section class="banking-overview-evidence">
+          <div class="mini-section-title">Evidence base</div>
+          <div class="banking-data-split">
+            <div class="data-source-card sandbox">
+              <div class="source-badge">ABN developer sandbox</div>
+              <h3>API & schema credibility</h3>
+              <div class="source-numbers"><span><b>3</b><small>accounts</small></span><span><b>424</b><small>captured activities</small></span></div>
+              <p>Read-only endpoint integration, pagination, account/balance/activity structures and canonical schema handling.</p>
+            </div>
+            <div class="data-source-arrow">+</div>
+            <div class="data-source-card synthetic">
+              <div class="source-badge">Synthetic longitudinal evaluation</div>
+              <h3>Enough history to test methods honestly</h3>
+              <div class="source-numbers"><span><b>400</b><small>corporate accounts</small></span><span><b>≈564k</b><small>activities</small></span></div>
+              <p>15 months of controlled account history with hidden archetypes and injected events used only after modelling decisions were frozen.</p>
+            </div>
+          </div>
+        </section>
 
-      <div class="banking-findings-head">
-        <div><div class="kicker">What the project actually learned</div><h2>The useful result was not “one model wins.”</h2></div>
-        <p>Different methods contributed different pieces of evidence. Several results were deliberately retained even when they were weak.</p>
-      </div>
+        <section class="banking-overview-findings">
+          <div class="banking-findings-head">
+            <div><div class="kicker">What the project actually learned</div><h2>The useful result was not “one model wins.”</h2></div>
+            <p>Different methods contributed different pieces of evidence. Several results were deliberately retained even when they were weak.</p>
+          </div>
 
-      <div class="banking-findings-grid">
-        <article class="finding-card forecast">
-          <div class="finding-icon">↗</div>
-          <h3>Forecasting</h3>
-          <p>Cash-flow and liquidity targets were more interpretable than absolute balance prediction. Simple baselines remained important where ML added little.</p>
-          <span>Useful for outlook, not prophecy</span>
-        </article>
-        <article class="finding-card cluster">
-          <div class="finding-icon">6</div>
-          <h3>Behavioural context</h3>
-          <p>Six descriptive groups captured differences in throughput, buffer, volatility and cash-burn behaviour.</p>
-          <span>Context, not permanent customer labels</span>
-        </article>
-        <article class="finding-card alert">
-          <div class="finding-icon">!</div>
-          <h3>Change detection</h3>
-          <p>The hybrid reduced workload to about <b>0.85 alerts/account/month</b>, but precision remained only <b>5.62%</b>.</p>
-          <span>Supporting signal — not autonomous action</span>
-        </article>
+          <div class="banking-findings-grid">
+            <article class="finding-card forecast">
+              <div class="finding-icon">↗</div>
+              <h3>Forecasting</h3>
+              <p>Cash-flow and liquidity targets were more interpretable than absolute balance prediction. Simple baselines remained important where ML added little.</p>
+              <span>Useful for outlook, not prophecy</span>
+            </article>
+            <article class="finding-card cluster">
+              <div class="finding-icon">6</div>
+              <h3>Behavioural context</h3>
+              <p>Six descriptive groups captured differences in throughput, buffer, volatility and cash-burn behaviour.</p>
+              <span>Context, not permanent customer labels</span>
+            </article>
+            <article class="finding-card alert">
+              <div class="finding-icon">!</div>
+              <h3>Change detection</h3>
+              <p>The hybrid reduced workload to about <b>0.85 alerts/account/month</b>, but precision remained only <b>5.62%</b>.</p>
+              <span>Supporting signal — not autonomous action</span>
+            </article>
+          </div>
+
+
+        </section>
       </div>
 
       <div class="banking-conclusion">
@@ -226,4 +235,4 @@
     </section>
 
   </div>
-</main><footer><div class="shell footer-row"><span>Banking Transaction Intelligence · Independent portfolio POC</span><span><a href="../index.html#projects">Portfolio</a> · <a href="mailto:ajitpalsingh0522@gmail.com">Contact Ajit</a></span></div></footer><script src="../script.js?v=20260918-BANK2"></script></body></html>
+</main><footer><div class="shell footer-row"><span>Banking Transaction Intelligence · Independent portfolio POC</span><span><a href="../index.html#projects">Portfolio</a> · <a href="mailto:ajitpalsingh0522@gmail.com">Contact Ajit</a></span></div></footer><script src="../script.js?v=20260918-BANK3"></script></body></html>
