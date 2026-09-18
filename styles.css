@@ -2206,4 +2206,28 @@ body.home-mode main{
   background:#80e7ff!important;
 }
 
+
+/* Canonical compact Level-3 case-study tab state */
+.tab-nav a{
+  padding:6px 10px!important;
+  border:1px solid #d9e5ef!important;
+  border-radius:9px!important;
+  background:#fff!important;
+  color:#52718a!important;
+  font-size:14px!important;
+  font-weight:760!important;
+  line-height:1.2!important;
+  box-shadow:none!important;
+}
+.tab-nav a:hover{
+  background:var(--blue-soft)!important;
+  border-color:#bdd9ee!important;
+  color:var(--blue)!important;
+}
+.tab-nav a.active{
+  background:var(--blue)!important;
+  border-color:var(--blue)!important;
+  color:#fff!important;
+  box-shadow:0 4px 12px rgba(15,108,234,.16)!important;
+}
 /* PORTFOLIO COMPLETION PASS: END */
