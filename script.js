@@ -90,7 +90,12 @@ function activateTab(id,{updateHash=false}={}){
     panel.classList.toggle('active',active);
     panel.hidden=!active;
   });
-  if(updateHash&&target)history.pushState({tab:target},'',`#${target}`);
+  if(updateHash&&target){
+    history.pushState({tab:target},'',`#${target}`);
+    /* Case-study tabs replace the page content below the persistent navigation.
+       Return to the top so the newly selected section is immediately visible. */
+    window.scrollTo({top:0,left:0,behavior:'auto'});
+  }
 }
 
 tabTriggers.forEach(link=>link.addEventListener('click',event=>{
