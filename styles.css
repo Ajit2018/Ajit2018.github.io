@@ -17,6 +17,23 @@ footer{padding:28px 0;border-top:1px solid var(--line);font-size:14px;color:var(
 @media(max-width:410px){.hero h1{font-size:38px}.supporting-line{font-size:15px}.lead{font-size:18px}.journey{grid-template-columns:1fr}.cover{height:170px}.case-header h1{font-size:34px}.identity b{font-size:15px}.identity-mark{width:38px;height:38px}.motif span{font-size:12px}.contact-band{padding:22px}.actions .btn{flex:1 1 auto}}
 
 /* HOME JOURNEY INFOGRAPHIC: START */
+html.home-mode,
+html.home-mode body{
+  height:100%;
+  overflow:hidden!important;
+}
+
+body.home-mode{
+  height:100dvh;
+  overflow:hidden!important;
+}
+
+body.home-mode main{
+  height:calc(100dvh - 79px);
+  min-height:0;
+  overflow:hidden;
+}
+
 .home-sr-only{
   position:absolute!important;
   width:1px!important;
@@ -29,12 +46,8 @@ footer{padding:28px 0;border-top:1px solid var(--line);font-size:14px;color:var(
   border:0!important;
 }
 
-body.home-mode{
-  overflow:hidden;
-}
-
 .home-view{
-  height:calc(100dvh - 79px);
+  height:100%;
   min-height:0;
   overflow:hidden;
   background:
@@ -45,23 +58,32 @@ body.home-mode{
 
 .home-shell{
   height:100%;
-  display:grid;
-  place-items:center;
+  min-height:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .home-infographic-hero{
   width:100%;
   height:100%;
-  display:grid;
-  place-items:center;
-  padding:10px 0;
+  min-height:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:8px 0;
 }
 
 .hero-infographic-card{
   margin:0;
-  width:max-content;
-  max-width:100%;
+  height:100%;
   max-height:100%;
+  width:auto;
+  max-width:100%;
+  aspect-ratio:1672/941;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   background:#fff;
   border:1px solid var(--line);
   border-radius:20px;
@@ -72,21 +94,18 @@ body.home-mode{
 
 .hero-infographic-image{
   display:block;
-  width:auto;
+  width:100%;
+  height:100%;
   max-width:100%;
-  height:auto;
-  max-height:calc(100dvh - 105px);
+  max-height:100%;
   object-fit:contain;
   border-radius:13px;
 }
 
 @media(max-width:720px){
-  .home-view{height:calc(100dvh - 67px)}
-  .home-infographic-hero{padding:8px 0}
+  body.home-mode main{height:calc(100dvh - 67px)}
+  .home-infographic-hero{padding:6px 0}
   .hero-infographic-card{padding:6px;border-radius:15px}
-  .hero-infographic-image{
-    max-height:calc(100dvh - 87px);
-    border-radius:10px;
-  }
+  .hero-infographic-image{border-radius:10px}
 }
 /* HOME JOURNEY INFOGRAPHIC: END */
