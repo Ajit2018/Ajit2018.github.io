@@ -917,3 +917,57 @@ body.home-mode main{
   .banking-overview-evidence .data-source-arrow{height:18px;transform:rotate(90deg)}
 }
 /* BANKING DENSITY PASS: END */
+
+
+/* SITE TYPOGRAPHY DENSITY: START */
+/* Compact, information-dense typography across the portfolio.
+   Home infographic is intentionally excluded. */
+.projects-overview-head h2{font-size:32px;line-height:1.12}
+.career-hero-copy h2{font-size:34px;line-height:1.12}
+.career-section-head h2{font-size:26px}
+.career-footprint h2{font-size:23px}
+.signature-card h3{font-size:17px}
+.contact-band h2{font-size:27px}
+
+/* Standard project pages */
+.case-header{padding:26px 0 20px}
+.case-header h1{font-size:34px;line-height:1.08;letter-spacing:-.03em}
+.case-header p{font-size:16px;line-height:1.48;margin-top:8px}
+.case-cover{height:210px}
+.case-main{padding:22px 0 40px}
+.panel-title{margin-bottom:16px}
+.panel-title h2{font-size:27px;line-height:1.15}
+.panel-title p{font-size:14px;line-height:1.4}
+.info-card h3{font-size:18px}
+.info-card p,.info-card li{font-size:14px}
+.number-card strong{font-size:25px}
+.number-card span{font-size:13px}
+.result-card .value{font-size:25px}
+.result-card h3{font-size:16px}
+.result-card p{font-size:13px}
+.principle b{font-size:16px}
+.principle p{font-size:14px}
+.data-table th,.data-table td{font-size:13.5px}
+
+/* General overview sections */
+.section-head h2{font-size:30px}
+.section-head p{font-size:14.5px}
+.card-body h3{font-size:20px}
+.card-body p{font-size:14.5px}
+.explore-card b{font-size:15.5px}
+.explore-card small{font-size:13.5px}
+
+/* Keep mobile readable rather than tiny */
+@media(max-width:720px){
+  .projects-overview-head h2{font-size:28px}
+  .career-hero-copy h2{font-size:29px}
+  .case-header h1{font-size:30px}
+  .panel-title h2{font-size:25px}
+  .section-head h2{font-size:27px}
+  .case-cover{height:190px}
+}
+@media(max-width:410px){
+  .case-header h1{font-size:28px}
+  .career-hero-copy h2{font-size:27px}
+}
+/* SITE TYPOGRAPHY DENSITY: END */
