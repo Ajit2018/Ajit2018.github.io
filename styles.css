@@ -1976,6 +1976,13 @@ body.home-mode main{
  .case-card-grid.four,.case-card-grid.three,.impact-grid,.boundary-grid{grid-template-columns:1fr}
  .case-callout{display:block}.case-callout b{display:block;margin-bottom:4px}
  .engineering-visual,.customer-visual,.manufacturing-map,.supply-visual,.pricing-tradeoff,.ai-stack-visual{min-height:190px}
+ .eng-orbit{font-size:9.5px}
+ .loc{font-size:11px}
+ .loc small{font-size:9.5px}
+ .supply-visual .node{font-size:10.5px}
+ .supply-label{font-size:10px}
+ .ai-stack-visual{padding:16px 22px}
+ .ai-stack-visual span{font-size:10px}
  .ai-arch-row{grid-template-columns:28px 1fr}.ai-arch-row p{grid-column:2}
 }
 @media(max-width:430px){
