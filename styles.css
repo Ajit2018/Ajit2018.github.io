@@ -2317,4 +2317,137 @@ body.home-mode main{
   color:#fff!important;
   box-shadow:none!important;
 }
+
+/* Desktop one-screen About view */
+@media(min-width:761px){
+  html.about-mode,
+  html.about-mode body{
+    height:100%;
+    overflow:hidden!important;
+  }
+  body.about-mode{
+    height:100dvh;
+    overflow:hidden!important;
+  }
+  body.about-mode main{
+    height:calc(100dvh - 69px);
+    min-height:0;
+    overflow:hidden;
+  }
+  body.about-mode .about-approved{
+    height:100%;
+    min-height:0;
+    padding:10px 0 9px;
+    overflow:hidden;
+  }
+  body.about-mode .about-approved-shell{
+    height:100%;
+    min-height:0;
+    display:grid;
+    grid-template-rows:minmax(0,1fr) auto;
+    gap:7px;
+  }
+  body.about-mode .about-approved-grid{
+    min-height:0;
+    height:100%;
+    grid-template-columns:38% 62%;
+    gap:20px;
+    align-items:stretch;
+  }
+  body.about-mode .about-photo-card{
+    min-height:0;
+    height:100%;
+    border-radius:18px;
+  }
+  body.about-mode .about-photo-caption{
+    left:12px;
+    bottom:12px;
+    padding:7px 10px;
+  }
+  body.about-mode .about-approved-content{
+    min-height:0;
+    padding:0;
+  }
+  body.about-mode .about-approved-content .kicker{
+    margin-bottom:2px;
+    font-size:12px;
+  }
+  body.about-mode .about-approved-content h2{
+    font-size:38px;
+    line-height:1;
+  }
+  body.about-mode .about-tagline{
+    margin:5px 0 8px!important;
+    font-size:15px!important;
+    line-height:1.25!important;
+  }
+  body.about-mode .about-approved-content>p{
+    margin:0 0 6px;
+    font-size:13px;
+    line-height:1.38;
+  }
+  body.about-mode .about-life-grid{
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:7px;
+    margin-top:8px;
+  }
+  body.about-mode .life-card,
+  body.about-mode .life-card:nth-child(8){
+    grid-column:auto;
+    grid-template-columns:30px minmax(0,1fr);
+    gap:6px;
+    min-height:0;
+    padding:7px;
+    border-radius:11px;
+  }
+  body.about-mode .life-icon{
+    width:30px;
+    height:30px;
+    border-radius:8px;
+    font-size:11px;
+  }
+  body.about-mode .life-card h3{
+    margin:0 0 2px;
+    font-size:11.5px;
+    line-height:1.15;
+  }
+  body.about-mode .life-card p{
+    font-size:9.5px;
+    line-height:1.24;
+  }
+  body.about-mode .about-quote{
+    grid-template-columns:30px 1fr auto;
+    gap:8px;
+    margin:0;
+    padding:7px 12px;
+    border-radius:12px;
+  }
+  body.about-mode .quote-mark{
+    font-size:27px;
+  }
+  body.about-mode .about-quote p{
+    font-size:11.5px;
+  }
+  body.about-mode .about-quote cite{
+    font-size:10.5px;
+  }
+}
+@media(max-width:760px){
+  html.about-mode,
+  html.about-mode body{
+    height:auto;
+    min-height:100%;
+    overflow:auto!important;
+  }
+  body.about-mode{
+    height:auto;
+    min-height:100dvh;
+    overflow:auto!important;
+  }
+  body.about-mode main{
+    height:auto;
+    min-height:calc(100dvh - 67px);
+    overflow:visible;
+  }
+}
 /* PORTFOLIO COMPLETION PASS: END */
