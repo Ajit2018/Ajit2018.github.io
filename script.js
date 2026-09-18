@@ -1,3 +1,31 @@
+/* Canonical portfolio navigation */
+(function normalizePortfolioNavigation(){
+  const nav=document.querySelector('.portfolio-project-nav');
+  if(!nav)return;
+  const path=(location.pathname.split('/').pop()||'').toLowerCase();
+  const active=
+    path==='banking.html'?'banking':
+    path==='pricing.html'?'pricing':
+    path==='finance.html'?'finance':
+    path==='engineering.html'?'engineering':
+    path==='customer.html'?'customer':
+    path==='manufacturing.html'?'manufacturing':
+    path==='supply-chain.html'?'supply-chain':
+    path==='ai-transformation.html'?'ai-transformation':'';
+
+  const root=location.pathname.includes('/projects/')?'':'projects/';
+  const item=(name,label,kind)=>`<a class="${kind}${active===name?' active':''}" href="${root}${name}.html#overview">${label}</a>`;
+  nav.innerHTML=
+    item('banking','Banking','case')+
+    item('pricing','Pricing &amp; RGM','live')+
+    item('finance','Finance','professional')+
+    item('engineering','Engineering &amp; Innovation','professional')+
+    item('customer','Customer','secondary')+
+    item('manufacturing','Manufacturing','secondary')+
+    item('supply-chain','Supply Chain','planned')+
+    item('ai-transformation','AI Transformation','planned');
+})();
+
 const menuButton=document.querySelector('[data-menu-button]');
 const mainNav=document.querySelector('[data-main-nav]');
 if(menuButton&&mainNav){
