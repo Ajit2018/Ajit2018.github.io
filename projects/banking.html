@@ -1,20 +1,229 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Banking Transaction Intelligence | Ajit Pal Singh — AI-Enabled Decision Intelligence</title><meta name="description" content="Banking Transaction Intelligence portfolio case study: ABN sandbox integration, PySpark, SQL, forecasting, behavioural clustering and explainable change detection."/><meta property="og:type" content="article"/><meta property="og:title" content="Banking Transaction Intelligence — Ajit Pal Singh"/><meta property="og:description" content="Explainable cash-flow, behavioural and change intelligence built from ABN sandbox schema fidelity and synthetic longitudinal evaluation."/><meta name="twitter:card" content="summary"/><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="../styles.css"/></head>
-<body><a class="skip-link" href="#case-content">Skip to case study</a><header class="site-header"><div class="shell topbar"><a class="identity" href="../index.html"><span class="identity-mark">APS</span><span><b>Ajit Pal Singh</b><small>AI-Enabled Decision Intelligence</small></span></a><button class="menu-btn" data-menu-button aria-label="Open menu" aria-expanded="false">☰</button><nav class="main-nav" data-main-nav aria-label="Main navigation"><a href="../index.html#home">Home</a><a class="active" href="../index.html#projects">Projects</a><a href="../index.html#experience">Career Journey</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a></nav></div>
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Banking Transaction Intelligence | Ajit Pal Singh — AI-Enabled Decision Intelligence</title><meta name="description" content="Banking Transaction Intelligence portfolio case study: ABN sandbox integration, PySpark, SQL, forecasting, behavioural clustering and explainable change detection."/><meta property="og:type" content="article"/><meta property="og:title" content="Banking Transaction Intelligence — Ajit Pal Singh"/><meta property="og:description" content="Explainable cash-flow, behavioural and change intelligence built from ABN sandbox schema fidelity and synthetic longitudinal evaluation."/><meta name="twitter:card" content="summary"/><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"/><link rel="stylesheet" href="../styles.css?v=20260918-BANK2"/></head>
+<body class="banking-page"><a class="skip-link" href="#case-content">Skip to case study</a><header class="site-header"><div class="shell topbar"><a class="identity" href="../index.html"><span class="identity-mark">APS</span><span><b>Ajit Pal Singh</b><small>AI-Enabled Decision Intelligence</small></span></a><button class="menu-btn" data-menu-button aria-label="Open menu" aria-expanded="false">☰</button><nav class="main-nav" data-main-nav aria-label="Main navigation"><a href="../index.html#home">Home</a><a class="active" href="../index.html#projects">Projects</a><a href="../index.html#experience">Career Journey</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a></nav></div>
 <div class="project-nav-wrap"><nav class="shell project-nav" aria-label="Project selection"><a class="case active" href="banking.html#overview">Banking</a><a class="live" href="pricing.html#overview">Pricing &amp; RGM</a><a class="planned" href="supply-chain.html#overview">Supply Chain</a><a class="planned" href="finance.html#overview">Finance</a><a class="planned" href="customer.html#overview">Customer</a><a class="planned" href="manufacturing.html#overview">Manufacturing</a><a class="planned" href="engineering.html#overview">Engineering</a><a class="planned" href="ai-transformation.html#overview">AI Transformation</a></nav></div>
 <div class="tab-nav-wrap"><nav class="shell tab-nav" role="tablist" aria-label="Banking case-study sections"><a href="#overview" data-tab-link="overview" role="tab">Overview</a><a href="#business-problem" data-tab-link="business-problem" role="tab">Business Problem</a><a href="#architecture" data-tab-link="architecture" role="tab">Architecture</a><a href="#results" data-tab-link="results" role="tab">Results</a><a href="#technical" data-tab-link="technical" role="tab">Technical Deep Dive</a><a href="#responsible-ai" data-tab-link="responsible-ai" role="tab">Responsible AI</a></nav></div></header>
 
-<main><section class="case-header"><div class="shell case-header-grid"><div><div class="eyebrow">Case study / in development</div><h1>Banking Transaction Intelligence</h1><p>From corporate transaction streams to explainable cash-flow, behavioural and relationship intelligence.</p><div class="actions"><a class="btn primary" href="#overview" data-tab-link="overview">20-second summary</a><a class="btn" href="#technical" data-tab-link="technical">Technical evidence</a></div></div><div class="case-cover"><svg viewBox="0 0 520 260" role="img" aria-label="Financial transaction network and cash-flow visualization"><defs><linearGradient id="bankGrad" x1="0" x2="1"><stop stop-color="#dff7ff"/><stop offset="1" stop-color="#ece8ff"/></linearGradient><linearGradient id="lineGrad" x1="0" x2="1"><stop stop-color="#0891b2"/><stop offset="1" stop-color="#7048e8"/></linearGradient></defs><rect width="520" height="260" fill="url(#bankGrad)"/><g opacity=".20" stroke="#1463e6"><path d="M0 53H520M0 104H520M0 155H520M0 206H520"/><path d="M86 0V260M172 0V260M258 0V260M344 0V260M430 0V260"/></g><path d="M22 184C94 55 146 211 221 113S364 56 500 88" fill="none" stroke="url(#lineGrad)" stroke-width="8"/><path d="M22 161C103 135 143 150 220 145S365 132 500 42" fill="none" stroke="#16835f" stroke-width="4" stroke-dasharray="10 8"/><g fill="#fff" stroke="#1463e6" stroke-width="5"><circle cx="23" cy="184" r="14"/><circle cx="124" cy="131" r="13"/><circle cx="221" cy="113" r="16"/><circle cx="349" cy="92" r="14"/><circle cx="500" cy="88" r="14"/></g></svg></div></div></section>
+<main id="case-content" class="banking-main">
+  <div class="shell banking-shell">
 
-<div id="case-content" class="case-main"><div class="shell">
-<section class="tab-panel" data-tab-panel="overview" role="tabpanel"><div class="panel-title"><div><div class="kicker">20–30 second summary</div><h2>Account intelligence designed around the next management conversation.</h2></div><p>Real sandbox data establishes API and schema credibility. Synthetic history provides the scale needed to test forecasting, segmentation and change signals honestly.</p></div><div class="grid-4"><div class="number-card"><strong>3</strong><span>real ABN sandbox accounts</span></div><div class="number-card"><strong>424</strong><span>captured sandbox activities</span></div><div class="number-card"><strong>400</strong><span>synthetic corporate accounts</span></div><div class="number-card"><strong>≈564k</strong><span>synthetic longitudinal activities</span></div></div><div class="grid-3" style="margin-top:16px"><div class="info-card"><h3>Business question</h3><p>Which corporate accounts need attention now, why, and what evidence should the relationship manager see before acting?</p></div><div class="info-card"><h3>Solution</h3><p>A governed evidence stack spanning transactions, cash outlook, liquidity context, behavioural groups and explainable change signals.</p></div><div class="info-card"><h3>Major finding</h3><p>Complexity alone did not solve monitoring: transparent rules over-alerted, while Isolation Forest missed too much. The hybrid remains contextual evidence only.</p></div></div><div class="disclosure"><b>Evidence boundary:</b> Real ABN AMRO sandbox data is used for API and schema fidelity; synthetic longitudinal data is used for modelling and controlled evaluation. Independent portfolio POC — not an ABN AMRO production deployment.</div></section>
+    <section class="tab-panel banking-panel" data-tab-panel="overview" role="tabpanel">
+      <div class="banking-panel-hero overview-hero">
+        <div class="banking-hero-copy">
+          <div class="eyebrow">Independent portfolio POC · Banking</div>
+          <h1>Banking Transaction Intelligence</h1>
+          <p class="banking-lead">A decision-support concept for relationship managers: combine transaction history, cash-flow outlook, behavioural context and explainable change signals so a manager can see <b>which account needs attention, why, and what to verify before acting.</b></p>
+          <div class="banking-evidence-note">ABN AMRO <b>developer-sandbox</b> data is used for API and schema fidelity. Longitudinal modelling uses a clearly separated synthetic corporate-account history.</div>
+        </div>
 
-<section class="tab-panel" data-tab-panel="business-problem" role="tabpanel"><div class="panel-title"><div><div class="kicker">Relationship-manager problem</div><h2>Traditional reporting shows what happened. The decision requires context about what may happen next.</h2></div><p>The design focuses on the evidence a manager needs before initiating a customer conversation—not an automatic customer decision.</p></div><div class="grid-2"><div class="info-card"><h3>Why transaction intelligence?</h3><ul><li>Balances alone hide cash-flow timing and counterparty dependence.</li><li>Portfolio thresholds ignore each account's own operating rhythm.</li><li>A low balance can be persistent, temporary or newly emerging.</li><li>An alert without evidence creates workload, not intelligence.</li></ul></div><div class="info-card"><h3>Decisions to support</h3><ul><li>Which accounts deserve review this week?</li><li>Is pressure new, persistent or forecast?</li><li>Which flows, counterparties or recurring patterns changed?</li><li>What should the manager verify before acting?</li></ul></div></div><div class="principle"><b>Management design principle</b><p>Surface the account, reason codes, evidence and uncertainty. Keep the human relationship manager accountable for interpretation and action.</p></div></section>
+        <div class="rm-cockpit" aria-label="Relationship manager decision cockpit illustration">
+          <div class="cockpit-title"><span>Relationship Manager View</span><b>Who needs attention now?</b></div>
+          <div class="cockpit-grid">
+            <div class="cockpit-card"><small>Cash outlook</small><strong>Pressure emerging</strong><span class="mini-line blue"></span></div>
+            <div class="cockpit-card"><small>Behaviour change</small><strong>New pattern</strong><span class="mini-line amber"></span></div>
+            <div class="cockpit-card"><small>Context</small><strong>High-throughput account</strong><span class="mini-line green"></span></div>
+            <div class="cockpit-action"><small>Human action</small><b>Review evidence → decide whether to contact customer</b></div>
+          </div>
+        </div>
+      </div>
 
-<section class="tab-panel" data-tab-panel="architecture" role="tabpanel"><div class="panel-title"><div><div class="kicker">Architecture</div><h2>From sandbox API to relationship intelligence.</h2></div><p>Completed layers are solid. Future AI components remain clearly separated as planned work.</p></div><div class="architecture"><div class="arch-node"><b>ABN Sandbox API</b><small>real schema & endpoint fidelity</small></div><span class="arch-arrow">→</span><div class="arch-node"><b>PySpark</b><small>Bronze / Silver / DQ</small></div><span class="arch-arrow">→</span><div class="arch-node"><b>SQL</b><small>reusable account analytics</small></div><span class="arch-arrow">→</span><div class="arch-node"><b>Forecasting</b><small>cash outlook & liquidity</small></div><span class="arch-arrow">→</span><div class="arch-node"><b>Behavioural Intelligence</b><small>clusters & context</small></div><span class="arch-arrow">→</span><div class="arch-node"><b>Change Detection</b><small>explainable signals</small></div><span class="arch-arrow">→</span><div class="arch-node planned"><b>Relationship Intelligence</b><small>priority + RAG + cockpit — planned</small></div></div><table class="data-table"><thead><tr><th>Layer</th><th>Status</th><th>Decision contribution</th></tr></thead><tbody><tr><td>API/schema, PySpark, SQL</td><td class="complete">COMPLETED</td><td>Trusted, reproducible quantitative foundation</td></tr><tr><td>Forecasting, liquidity, clustering, change detection</td><td class="complete">COMPLETED</td><td>Account outlook, context and explainable deviations</td></tr><tr><td>Relationship-priority engine</td><td class="planned-text">PLANNED</td><td>Combine evidence under workload guardrails</td></tr><tr><td>RAG agent and management cockpit</td><td class="planned-text">PLANNED</td><td>Retrieve evidence, explain and support human approval</td></tr></tbody></table></section>
+      <div class="banking-story-flow" aria-label="Banking intelligence flow">
+        <div><span>1</span><b>Transactions</b><small>what actually moved</small></div><i>→</i>
+        <div><span>2</span><b>Cash outlook</b><small>what may happen next</small></div><i>→</i>
+        <div><span>3</span><b>Behaviour</b><small>what is normal for this account</small></div><i>→</i>
+        <div><span>4</span><b>Change signals</b><small>what became unusual</small></div><i>→</i>
+        <div class="human"><span>5</span><b>Manager review</b><small>evidence before action</small></div>
+      </div>
 
-<section class="tab-panel" data-tab-panel="results" role="tabpanel"><div class="panel-title"><div><div class="kicker">Business-relevant findings</div><h2>Useful evidence includes results that are weak, conditional or operationally impractical.</h2></div><p>The portfolio preserves negative findings rather than converting every model into a success claim.</p></div><div class="grid-4"><div class="result-card neutral"><div class="value">7–30d</div><h3>Cash-flow outlook</h3><p>Causal account-day features and mandatory transparent baselines were evaluated before ML.</p></div><div class="result-card good"><div class="value">6</div><h3>Behavioural groups</h3><p>Descriptive clusters distinguish throughput, buffer, volatility and cash-burn patterns.</p></div><div class="result-card warn"><div class="value">0.85</div><h3>Hybrid alerts</h3><p>Alerts per account/month on held-out data: manageable, but still weakly precise.</p></div><div class="result-card bad"><div class="value">5.62%</div><h3>Hybrid precision</h3><p>Evidence that the detector is not suitable for autonomous action.</p></div></div><div class="grid-3" style="margin-top:16px"><div class="info-card"><h3>Forecasting</h3><p>Absolute balance targets proved poorly posed for relationship risk. Drawdown and new-entry liquidity targets offered clearer interpretation, with simple baselines retained where preferable.</p></div><div class="info-card"><h3>Clustering</h3><p>K-means with six clusters provided interpretable context. Stability was moderate, so clusters are descriptive—not permanent customer types.</p></div><div class="info-card"><h3>Change detection</h3><p>Rules found more events but overwhelmed users; Isolation Forest controlled workload but missed too much. The hybrid is a supporting severity signal, not a decision.</p></div></div></section>
+      <div class="banking-data-split">
+        <div class="data-source-card sandbox">
+          <div class="source-badge">ABN developer sandbox</div>
+          <h3>API & schema credibility</h3>
+          <div class="source-numbers"><span><b>3</b><small>accounts</small></span><span><b>424</b><small>captured activities</small></span></div>
+          <p>Read-only endpoint integration, pagination, account/balance/activity structures and canonical schema handling.</p>
+        </div>
+        <div class="data-source-arrow">+</div>
+        <div class="data-source-card synthetic">
+          <div class="source-badge">Synthetic longitudinal evaluation</div>
+          <h3>Enough history to test methods honestly</h3>
+          <div class="source-numbers"><span><b>400</b><small>corporate accounts</small></span><span><b>≈564k</b><small>activities</small></span></div>
+          <p>15 months of controlled account history with hidden archetypes and injected events used only after modelling decisions were frozen.</p>
+        </div>
+      </div>
 
-<section class="tab-panel" data-tab-panel="technical" role="tabpanel"><div class="panel-title"><div><div class="kicker">Technical deep dive</div><h2>Reproducible data engineering, causal features and post-freeze validation.</h2></div><p>Technical depth is organized around controls and evidence—not a model-development log.</p></div><div class="grid-3"><div class="info-card"><h3>API and canonical schema</h3><p>Read-only account, balance and paginated activity capture. Versioned schemas preserve source IDs, arrays, raw JSON and deterministic SHA-256 activity keys.</p></div><div class="info-card"><h3>Bronze / Silver pipeline</h3><p>PySpark normalizes immutable raw JSON, parses proper dates and decimals, retains type-specific fields and saves canonical Parquet tables with automated quality reports.</p></div><div class="info-card"><h3>SQL analytics</h3><p>Explicit reusable queries cover account summaries, flow direction, running balances, concentration, frequency, mutation codes and quality diagnostics.</p></div><div class="info-card"><h3>Causal forecasting</h3><p>Chronological within-account splits, lagged and rolling features, no future leakage, mandatory mean/median/seasonal baselines and post-hoc event/archetype slices.</p></div><div class="info-card"><h3>Behavioural clustering</h3><p>Account-level common window, skew transformations, correlation pruning, robust scaling, K-means/GMM comparison and seed/bootstrap/window stability.</p></div><div class="info-card"><h3>Change detection</h3><p>Account-day median/MAD rules, percentage change, EWMA shifts, account-relative thresholds and one lightweight Isolation Forest trained only on observable history.</p></div></div><div class="principle"><b>Leakage control</b><p>Synthetic archetypes and 380 injected-event labels were hidden during features, thresholds, model selection and tuning. They were joined only after decisions were frozen.</p></div></section>
+      <div class="banking-findings-head">
+        <div><div class="kicker">What the project actually learned</div><h2>The useful result was not “one model wins.”</h2></div>
+        <p>Different methods contributed different pieces of evidence. Several results were deliberately retained even when they were weak.</p>
+      </div>
 
-<section class="tab-panel" data-tab-panel="responsible-ai" role="tabpanel"><div class="panel-title"><div><div class="kicker">Responsible AI</div><h2>Clear evidence boundaries and human accountability.</h2></div><p>This case study is intentionally explicit about what the work does—and does not—demonstrate.</p></div><div class="grid-2"><div class="info-card"><h3>What is real</h3><ul><li>ABN sandbox endpoints and response schemas</li><li>Read-only API integration and pagination</li><li>Bronze/Silver/SQL pipeline implementation</li><li>Reproducible analytical methodology</li></ul></div><div class="info-card"><h3>What is synthetic</h3><ul><li>Longitudinal 400-account history</li><li>Behavioural archetypes and injected events</li><li>Model performance and operational workload evidence</li><li>Ground truth used only after detector freeze</li></ul></div><div class="info-card"><h3>Deterministic analytics versus AI</h3><p>Data pipelines and quantitative models remain the authority for calculations. Planned AI retrieves and explains governed outputs; it does not invent the numbers.</p></div><div class="info-card"><h3>Claims not made</h3><p>No autonomous customer decision, no AML or fraud model, no production ABN deployment, and no validated production banking performance.</p></div></div><div class="principle"><b>Human in the loop</b><p>A relationship manager should see evidence, assumptions, reason codes and uncertainty before deciding whether and how to engage a customer.</p></div></section>
-</div></div></main><footer><div class="shell footer-row"><span>Banking Transaction Intelligence · Independent portfolio POC</span><span><a href="../index.html#projects">Portfolio</a> · <a href="mailto:ajitpalsingh0522@gmail.com">Contact Ajit</a></span></div></footer><script src="../script.js"></script></body></html>
+      <div class="banking-findings-grid">
+        <article class="finding-card forecast">
+          <div class="finding-icon">↗</div>
+          <h3>Forecasting</h3>
+          <p>Cash-flow and liquidity targets were more interpretable than absolute balance prediction. Simple baselines remained important where ML added little.</p>
+          <span>Useful for outlook, not prophecy</span>
+        </article>
+        <article class="finding-card cluster">
+          <div class="finding-icon">6</div>
+          <h3>Behavioural context</h3>
+          <p>Six descriptive groups captured differences in throughput, buffer, volatility and cash-burn behaviour.</p>
+          <span>Context, not permanent customer labels</span>
+        </article>
+        <article class="finding-card alert">
+          <div class="finding-icon">!</div>
+          <h3>Change detection</h3>
+          <p>The hybrid reduced workload to about <b>0.85 alerts/account/month</b>, but precision remained only <b>5.62%</b>.</p>
+          <span>Supporting signal — not autonomous action</span>
+        </article>
+      </div>
+
+      <div class="banking-conclusion">
+        <div class="conclusion-label">Management conclusion</div>
+        <p><b>The architecture should support a relationship manager, not replace one.</b> The next layer is a priority engine that combines outlook, behaviour and explainable change evidence under workload guardrails; RAG and cockpit layers remain planned.</p>
+      </div>
+    </section>
+
+    <section class="tab-panel banking-panel" data-tab-panel="business-problem" role="tabpanel">
+      <div class="banking-section-hero">
+        <div>
+          <div class="eyebrow">Business problem</div>
+          <h1>A balance dashboard tells you what happened. A relationship manager needs to know what deserves attention now.</h1>
+          <p>Corporate accounts have different operating rhythms. The same low balance or unusual transaction can mean very different things depending on timing, counterparties, recurring flows and the account's own history.</p>
+        </div>
+        <div class="problem-visual">
+          <div class="problem-account">Corporate account</div>
+          <div class="problem-signals">
+            <span>Balance ↓</span><span>Outflow spike</span><span>New counterparty</span><span>Pattern shift</span>
+          </div>
+          <div class="problem-question">Which signal matters — and why?</div>
+        </div>
+      </div>
+
+      <div class="bad-good-grid">
+        <div class="bad-intelligence">
+          <div class="comparison-label">Alerting</div>
+          <h3>“Balance below threshold.”</h3>
+          <ul><li>Same rule for very different accounts</li><li>No operating context</li><li>No explanation of what changed</li><li>Creates review workload</li></ul>
+        </div>
+        <div class="good-intelligence">
+          <div class="comparison-label">Relationship intelligence</div>
+          <h3>“Cash pressure is newly emerging and differs from this account's normal pattern.”</h3>
+          <ul><li>Account-relative evidence</li><li>Cash-flow outlook and behavioural context</li><li>Reason codes and supporting transactions</li><li>Manager decides whether to engage</li></ul>
+        </div>
+      </div>
+
+      <div class="manager-decision-flow">
+        <div><b>1. Prioritise</b><span>Which accounts deserve review this week?</span></div>
+        <i>→</i><div><b>2. Explain</b><span>What changed, when and relative to what?</span></div>
+        <i>→</i><div><b>3. Verify</b><span>Which flows or counterparties support the signal?</span></div>
+        <i>→</i><div><b>4. Act</b><span>Manager chooses whether and how to contact the customer.</span></div>
+      </div>
+
+      <div class="principle"><b>Design principle</b><p>Surface the account, reason codes, evidence and uncertainty. Keep the relationship manager accountable for interpretation and action.</p></div>
+    </section>
+
+    <section class="tab-panel banking-panel" data-tab-panel="architecture" role="tabpanel">
+      <div class="banking-section-hero compact">
+        <div><div class="eyebrow">Architecture</div><h1>From developer-sandbox transactions to relationship-manager evidence.</h1><p>The completed work builds a reproducible quantitative foundation. Priority, RAG and management-cockpit layers are intentionally shown as planned rather than implied as finished.</p></div>
+      </div>
+
+      <div class="bank-architecture-visual">
+        <div class="architecture-stage done"><span>01</span><b>ABN Sandbox API</b><small>accounts · balances · activities</small></div>
+        <i>→</i>
+        <div class="architecture-stage done"><span>02</span><b>PySpark Data Layer</b><small>Bronze · Silver · DQ</small></div>
+        <i>→</i>
+        <div class="architecture-stage done"><span>03</span><b>SQL / Features</b><small>account-day evidence</small></div>
+        <i>→</i>
+        <div class="architecture-stage done"><span>04</span><b>Forecast + Behaviour + Change</b><small>outlook · clusters · signals</small></div>
+        <i>→</i>
+        <div class="architecture-stage planned"><span>05</span><b>Priority Engine</b><small>planned</small></div>
+        <i>→</i>
+        <div class="architecture-stage planned"><span>06</span><b>RAG + RM Cockpit</b><small>planned</small></div>
+      </div>
+
+      <div class="architecture-evidence-grid">
+        <div><span class="complete">COMPLETED</span><h3>Trusted quantitative layer</h3><p>API/schema integration, PySpark normalization, data-quality controls, SQL analytics and reproducible features.</p></div>
+        <div><span class="complete">COMPLETED</span><h3>Analytical evidence</h3><p>Forecasting, liquidity context, behavioural clustering and explainable change detection.</p></div>
+        <div><span class="planned-text">PLANNED</span><h3>Decision orchestration</h3><p>Combine signals into relationship priority under workload and explainability constraints.</p></div>
+        <div><span class="planned-text">PLANNED</span><h3>AI interaction layer</h3><p>Retrieve governed evidence and explain it; do not recalculate or invent quantitative facts.</p></div>
+      </div>
+    </section>
+
+    <section class="tab-panel banking-panel" data-tab-panel="results" role="tabpanel">
+      <div class="banking-section-hero compact">
+        <div><div class="eyebrow">Results</div><h1>The most important result was learning where automation should stop.</h1><p>The work preserved weak and negative findings rather than forcing every technique into a success story.</p></div>
+      </div>
+
+      <div class="results-dashboard">
+        <div class="result-visual-card">
+          <div class="result-kpi">7–30d</div><h3>Cash-flow outlook</h3>
+          <div class="result-bar"><span style="width:72%"></span></div>
+          <p>Evaluated causal account-day forecasts against transparent baselines; longer-horizon cumulative flow was more useful than absolute balance targets.</p>
+        </div>
+        <div class="result-visual-card">
+          <div class="result-kpi">6</div><h3>Behaviour groups</h3>
+          <div class="cluster-dots"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p>Interpretable descriptive context for throughput, cash buffer, volatility and burn patterns.</p>
+        </div>
+        <div class="result-visual-card warn">
+          <div class="result-kpi">0.85</div><h3>Hybrid alerts / account / month</h3>
+          <div class="result-bar"><span style="width:38%"></span></div>
+          <p>Workload became manageable compared with transparent rules alone.</p>
+        </div>
+        <div class="result-visual-card bad">
+          <div class="result-kpi">5.62%</div><h3>Hybrid precision</h3>
+          <div class="result-bar"><span style="width:12%"></span></div>
+          <p>Still far too weak for autonomous customer action — a crucial design finding.</p>
+        </div>
+      </div>
+
+      <div class="results-lessons">
+        <div><b>Forecasting</b><p>Prefer interpretable liquidity / drawdown targets and keep simple baselines where they remain competitive.</p></div>
+        <div><b>Clustering</b><p>Use groups as contextual descriptions, not permanent customer types; stability was only moderate.</p></div>
+        <div><b>Change detection</b><p>Rules had high recall but excessive workload. Isolation Forest controlled workload but missed too much. Hybrid signals remain supporting evidence only.</p></div>
+      </div>
+    </section>
+
+    <section class="tab-panel banking-panel" data-tab-panel="technical" role="tabpanel">
+      <div class="banking-section-hero compact">
+        <div><div class="eyebrow">Technical deep dive</div><h1>Reproducible engineering first; models second.</h1><p>The technical design emphasizes traceability, causal features, chronological validation and explicit leakage controls.</p></div>
+      </div>
+
+      <div class="technical-pipeline">
+        <article><span>API</span><h3>Canonical capture</h3><p>Read-only account, balance and paginated activity capture with source IDs, arrays, raw JSON and deterministic activity keys.</p></article>
+        <article><span>SPARK</span><h3>Bronze / Silver</h3><p>PySpark normalization, proper dates/decimals, type-specific fields, canonical Parquet and automated quality reporting.</p></article>
+        <article><span>SQL</span><h3>Reusable account analytics</h3><p>Flow direction, running balances, concentration, frequency, mutation codes and quality diagnostics.</p></article>
+        <article><span>ML</span><h3>Causal forecasting</h3><p>Chronological within-account splits, lagged/rolling features and mandatory mean/median/seasonal baselines.</p></article>
+        <article><span>CTX</span><h3>Behavioural context</h3><p>Common-window features, skew transforms, correlation pruning, robust scaling and stability checks.</p></article>
+        <article><span>Δ</span><h3>Explainable change</h3><p>Median/MAD rules, percentage change, EWMA shifts, account-relative thresholds and a lightweight Isolation Forest.</p></article>
+      </div>
+
+      <div class="principle"><b>Leakage control</b><p>Synthetic archetypes and 380 injected-event labels were hidden during feature design, thresholds, model selection and tuning. They were joined only after analytical decisions were frozen.</p></div>
+    </section>
+
+    <section class="tab-panel banking-panel" data-tab-panel="responsible-ai" role="tabpanel">
+      <div class="banking-section-hero compact">
+        <div><div class="eyebrow">Responsible AI & evidence boundaries</div><h1>Be explicit about what is real, what is synthetic, and what remains human.</h1><p>This case study is designed to demonstrate disciplined reasoning, not to imply production banking deployment.</p></div>
+      </div>
+
+      <div class="evidence-boundary-visual">
+        <div class="boundary-card real">
+          <div class="boundary-icon">✓</div><h3>Real implementation evidence</h3>
+          <ul><li>ABN developer-sandbox endpoints and schemas</li><li>Read-only API integration and pagination</li><li>Bronze / Silver / SQL pipeline implementation</li><li>Reproducible analytical methodology</li></ul>
+        </div>
+        <div class="boundary-divider">≠</div>
+        <div class="boundary-card synthetic">
+          <div class="boundary-icon">SYN</div><h3>Synthetic evaluation evidence</h3>
+          <ul><li>400-account longitudinal history</li><li>Behavioural archetypes and injected events</li><li>Model-performance and alert-workload evidence</li><li>Ground truth disclosed only after freeze</li></ul>
+        </div>
+      </div>
+
+      <div class="responsibility-grid">
+        <div><h3>Quantitative truth</h3><p>Data pipelines and deterministic / statistical models calculate the facts.</p></div>
+        <div><h3>AI role</h3><p>Planned AI retrieves, summarizes and explains governed outputs; it is not the numerical authority.</p></div>
+        <div><h3>Human accountability</h3><p>The relationship manager reviews evidence, assumptions and uncertainty before deciding whether and how to act.</p></div>
+        <div><h3>Claims not made</h3><p>No AML/fraud model, no autonomous customer decision, no production ABN deployment, and no validated production banking performance.</p></div>
+      </div>
+    </section>
+
+  </div>
+</main><footer><div class="shell footer-row"><span>Banking Transaction Intelligence · Independent portfolio POC</span><span><a href="../index.html#projects">Portfolio</a> · <a href="mailto:ajitpalsingh0522@gmail.com">Contact Ajit</a></span></div></footer><script src="../script.js?v=20260918-BANK2"></script></body></html>
