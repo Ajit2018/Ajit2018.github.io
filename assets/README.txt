@@ -1,15 +1,21 @@
-PORTRAIT ASSET
+PORTFOLIO ASSETS
 
-Place Ajit's preferred professional portrait here as:
+This folder contains public visual assets used by the live portfolio at:
 
-  ajit-portrait.png
+  https://ajit2018.github.io/
 
-Recommended source image:
-- portrait orientation (approximately 4:5)
-- at least 800 × 1000 pixels
-- neutral or bright background
-- compressed for web use
+Current asset groups include:
 
-The homepage currently uses an intentional CSS placeholder. When the final image
-is available, replace the placeholder block in index.html with an image using
-the same portrait-placeholder container so the layout does not need redesigning.
+- home journey infographic;
+- favicon / branding assets;
+- Engineering evidence:
+  - PerfectCare patent figures;
+  - PerfectCare product context;
+  - Philips dry-iron product evidence;
+- Career Journey evidence:
+  - ENWAKE prototype / entrepreneurship event images.
+
+Asset policy
+- Only public or user-supplied evidence is included.
+- Images support the career narrative; they are not used to imply unsupported product ownership or production claims.
+- Project pages should continue to use repository-relative asset paths for GitHub Pages compatibility.
