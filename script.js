@@ -70,10 +70,13 @@ function activateSiteView(id,{updateHash=false,replaceHash=false}={}){
   if(homeProjectNav)homeProjectNav.hidden=target!=='projects';
 
   const isHome=target==='home';
+  const isAbout=target==='about';
   const footer=document.querySelector('footer');
-  if(footer)footer.hidden=isHome;
+  if(footer)footer.hidden=isHome||isAbout;
   document.body.classList.toggle('home-mode',isHome);
   document.documentElement.classList.toggle('home-mode',isHome);
+  document.body.classList.toggle('about-mode',isAbout);
+  document.documentElement.classList.toggle('about-mode',isAbout);
 
   if(updateHash){
     const url=`#${target}`;
