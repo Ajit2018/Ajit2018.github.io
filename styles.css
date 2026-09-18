@@ -109,3 +109,194 @@ body.home-mode main{
   .hero-infographic-image{border-radius:10px}
 }
 /* HOME JOURNEY INFOGRAPHIC: END */
+
+
+/* EXPERIENCE PAGE: START */
+.experience-view{
+  background:linear-gradient(180deg,#f8fbff 0%,#ffffff 46%,#f7fbff 100%);
+  padding:42px 0 54px;
+}
+.experience-shell{max-width:1180px}
+.experience-hero{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:30px;
+  align-items:start;
+  margin-bottom:28px;
+}
+.experience-hero h2{
+  margin:0 0 10px;
+  font-size:38px;
+  line-height:1.12;
+  letter-spacing:-.03em;
+}
+.experience-hero p{
+  margin:0;
+  max-width:760px;
+  color:var(--text);
+  font-size:17px;
+}
+.experience-summary{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+.experience-summary span{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:14px;
+  box-shadow:var(--shadow-soft);
+}
+.experience-summary b{
+  display:block;
+  color:var(--blue);
+  font-size:18px;
+}
+.experience-summary small{
+  display:block;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.35;
+  margin-top:3px;
+}
+.experience-timeline{
+  display:grid;
+  gap:14px;
+  position:relative;
+}
+.experience-card{
+  display:grid;
+  grid-template-columns:145px 1fr;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:var(--shadow-soft);
+}
+.experience-year{
+  padding:22px 18px;
+  background:var(--blue-soft);
+  color:var(--blue);
+  font-weight:900;
+  font-size:16px;
+  border-right:1px solid var(--line);
+}
+.experience-card.current .experience-year{background:var(--violet-soft);color:var(--violet)}
+.experience-card.finance-exp .experience-year{background:var(--amber-soft);color:var(--amber)}
+.experience-card.pricing-exp .experience-year{background:var(--coral-soft);color:var(--coral)}
+.experience-card.engineering-exp .experience-year{background:var(--cyan-soft);color:var(--cyan)}
+.experience-card-body{padding:20px 22px}
+.experience-role{
+  color:var(--muted);
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-weight:850;
+  margin-bottom:3px;
+}
+.experience-card h3{
+  margin:0 0 7px;
+  font-size:22px;
+  line-height:1.2;
+}
+.experience-card p,
+.experience-card li{
+  color:var(--text);
+  font-size:15.5px;
+}
+.experience-card p{margin:0 0 8px}
+.experience-card ul{margin:8px 0 0;padding-left:20px}
+.experience-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin-top:12px;
+}
+.experience-tags span{
+  padding:5px 9px;
+  border-radius:999px;
+  background:#f4f8fc;
+  border:1px solid var(--line);
+  color:#486581;
+  font-size:12.5px;
+  font-weight:800;
+}
+.experience-impact{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:10px;
+  margin:22px 0 30px;
+}
+.experience-impact div{
+  text-align:center;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:16px 10px;
+  box-shadow:var(--shadow-soft);
+}
+.experience-impact strong{
+  display:block;
+  font-size:26px;
+  color:var(--blue);
+  line-height:1;
+}
+.experience-impact span{
+  display:block;
+  font-size:13px;
+  color:var(--muted);
+  margin-top:6px;
+  line-height:1.3;
+}
+.compact-head{margin-bottom:14px}
+.compact-head h2{font-size:28px}
+.education-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+}
+.education-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:17px;
+  box-shadow:var(--shadow-soft);
+}
+.education-card b{
+  display:block;
+  font-size:17px;
+  color:var(--blue);
+}
+.education-card span{
+  display:block;
+  font-weight:800;
+  font-size:15px;
+  margin-top:2px;
+}
+.education-card small{
+  display:block;
+  color:var(--muted);
+  margin-top:5px;
+  line-height:1.35;
+}
+@media(max-width:900px){
+  .experience-hero{grid-template-columns:1fr}
+  .experience-impact{grid-template-columns:repeat(3,1fr)}
+  .education-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .experience-view{padding:28px 0 40px}
+  .experience-hero h2{font-size:31px}
+  .experience-summary{grid-template-columns:1fr 1fr}
+  .experience-card{grid-template-columns:1fr}
+  .experience-year{
+    border-right:0;
+    border-bottom:1px solid var(--line);
+    padding:10px 16px;
+  }
+  .experience-card-body{padding:17px}
+  .experience-impact{grid-template-columns:1fr 1fr}
+  .education-grid{grid-template-columns:1fr}
+}
+/* EXPERIENCE PAGE: END */
