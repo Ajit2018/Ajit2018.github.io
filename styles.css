@@ -661,7 +661,7 @@ body.home-mode main{
   list-style:none;
   cursor:pointer;
   display:grid;
-  grid-template-columns:120px 1fr 34px;
+  grid-template-columns:120px 1fr auto;
   align-items:center;
   gap:14px;
   padding:14px 16px;
@@ -684,18 +684,42 @@ body.home-mode main{
   color:var(--muted);
   font-size:12.5px;
 }
-.chapter-plus{
-  width:30px;
-  height:30px;
-  display:grid;
-  place-items:center;
-  border-radius:9px;
+.chapter-action{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  min-width:112px;
+  padding:7px 10px;
+  border:1px solid #bdd9ee;
+  border-radius:999px;
   background:var(--blue-soft);
   color:var(--blue);
+  font-size:11.5px;
+  line-height:1;
   font-weight:900;
+  white-space:nowrap;
   transition:.18s;
 }
-.career-chapter[open] .chapter-plus{transform:rotate(45deg)}
+.chapter-action b{
+  font-size:16px;
+  line-height:1;
+  transition:.18s;
+}
+.chapter-close-label{display:none}
+.career-chapter summary:hover .chapter-action{
+  background:var(--blue);
+  border-color:var(--blue);
+  color:#fff;
+}
+.career-chapter[open] .chapter-open-label{display:none}
+.career-chapter[open] .chapter-close-label{display:inline}
+.career-chapter[open] .chapter-action{
+  background:var(--blue);
+  border-color:var(--blue);
+  color:#fff;
+}
+.career-chapter[open] .chapter-action b{transform:rotate(45deg)}
 .chapter-body{
   border-top:1px solid var(--line);
   padding:15px 16px 17px;
@@ -777,9 +801,17 @@ body.home-mode main{
   .signature-stories .signature-card:last-child{grid-column:auto}
   .career-section-head{display:block}
   .career-section-head p{margin-top:5px}
-  .career-chapter summary{grid-template-columns:86px 1fr 30px;gap:9px;padding:12px}
+  .career-chapter summary{grid-template-columns:78px 1fr auto;gap:8px;padding:12px}
   .chapter-main b{font-size:14px}
   .chapter-main small{font-size:11.5px}
+  .chapter-action{
+    min-width:auto;
+    padding:7px 8px;
+    font-size:0;
+    gap:0;
+  }
+  .chapter-action b{font-size:16px}
+  .chapter-open-label,.chapter-close-label{display:none!important}
   .chapter-grid{grid-template-columns:1fr}
 }
 @media(max-width:520px){
