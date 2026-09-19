@@ -854,16 +854,16 @@ body.home-mode main{
   object-fit:contain;
 }
 .education-logo-rsm img{
-  max-width:190px;
-  max-height:78px;
+  max-width:235px;
+  max-height:88px;
 }
 .education-logo-nus img{
   max-width:150px;
   max-height:86px;
 }
 .education-logo-iitm img{
-  max-width:180px;
-  max-height:82px;
+  max-width:225px;
+  max-height:88px;
 }
 .education-logo-sixsigma{
   width:78px;
@@ -912,9 +912,9 @@ body.home-mode main{
     height:82px;
     margin-bottom:8px;
   }
-  .education-logo-rsm img{max-width:170px;max-height:70px}
+  .education-logo-rsm img{max-width:205px;max-height:76px}
   .education-logo-nus img{max-width:138px;max-height:78px}
-  .education-logo-iitm img{max-width:164px;max-height:74px}
+  .education-logo-iitm img{max-width:200px;max-height:78px}
   .education-logo-sixsigma{
     width:70px;
     height:70px;
