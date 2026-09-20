@@ -1,10 +1,11 @@
 # Portfolio Deployment & Shareability Status
 
-**Status date:** 2026-09-19  
+**Status date:** 2026-09-20  
 **Live site:** https://ajit2018.github.io/  
-**Decision:** **PASS — shareable in CVs, applications, referrals and professional outreach**
+**Evidence baseline:** Master Profile V16  
+**Decision:** **PASS — shareable after the V16 evidence-refresh branch is merged and live smoke checks pass**
 
-## Current public architecture
+## Public architecture
 
 ### Level 1
 - Home
@@ -17,98 +18,102 @@
 - Banking
 - Pricing & RGM
 - Finance
+- Project Economics
 - Engineering & Innovation
-- Customer
-- Manufacturing
-- Supply Chain
 - AI Transformation
+- Supply Chain
+
+Legacy `customer.html` and `manufacturing.html` URLs are retained as redirects so existing links do not break.
 
 ### Level 3 — case-study navigation
-Each portfolio page uses a compact tab system such as:
+Case-study pages use:
 - Overview
-- Business Problem
-- Architecture / Decision System
-- Results / Impact
-- Methods / Technical Deep Dive
-- Responsible AI / Boundaries
+- Business Problem / Evidence
+- Decision System
+- Evidence / Impact
+- Methods
+- Boundaries
 
-The default **Portfolio** entry opens Banking so the domain selector is immediately visible.
-
-## Current public pages
+## Public pages
 
 - `index.html`
 - `projects/banking.html`
 - `projects/pricing.html`
 - `projects/finance.html`
+- `projects/project-economics.html`
 - `projects/engineering.html`
-- `projects/customer.html`
-- `projects/manufacturing.html`
-- `projects/supply-chain.html`
 - `projects/ai-transformation.html`
+- `projects/supply-chain.html`
+
+Legacy redirects:
+- `projects/customer.html` → Project Economics
+- `projects/manufacturing.html` → Engineering
+
+## V16 evidence-control changes
+
+The September 20 refresh deliberately removed or qualified older public claims that the archive reconstruction did not support strongly enough.
+
+Examples:
+- “six international patents” → **six Philips patent families/publications**;
+- broad FLUENT / PerfectCare cyclone / multiphase CFD statements are no longer presented as verified headline claims;
+- historical Singapore figures such as ~80 designers, ~20% cost reduction, ~3M units/year and offshore scale are no longer used as verified public proof points;
+- 250+ senior-user language was removed where the final evidence baseline did not retain it as a preferred public claim;
+- Finance now uses directly evidenced or correctly bounded metrics: 17 markets, €20M+ estimated Kuber exposure, ~2M Price Optimization records, >€450M STTI scope and >€10M internal Group Tax risk-mitigation estimate;
+- Project Economics now exposes the verified MR NPI and China portfolio evidence with estimate/scenario boundaries;
+- Engineering now centres on ANSYS CAE, transient thermal work, nonlinear structural/contact analysis, simulation-to-test evidence, cross-site simulation leadership and patent evidence.
 
 ## Responsive / mobile status
 
-Source-level responsive QA confirms:
+Source-level responsive design includes:
+- mobile hamburger navigation;
+- compact evidence-controlled Home story on mobile;
+- horizontally scrollable portfolio and case-study selectors;
+- responsive case-study grids;
+- mobile-safe engineering evidence layouts;
+- progressive Career Journey layout collapse;
+- normal scrolling on narrow screens;
+- wrapping contact actions.
 
-- mobile hamburger navigation is implemented;
-- Home switches from the desktop infographic to a dedicated mobile story;
-- Portfolio-domain and Level-3 selectors remain horizontally scrollable where necessary;
-- case-study grids collapse to one or two columns at narrow widths;
-- data tables are horizontally scrollable;
-- Engineering evidence images switch to mobile-safe layouts;
-- Career Journey grids collapse progressively;
-- About disables the desktop one-screen lock below 760px and returns to normal scrolling;
-- Contact buttons wrap on narrow screens.
-
-No blocking responsive defect is currently identified.
-
-## Public evidence and claim safety
+## Public evidence and confidentiality
 
 The portfolio deliberately separates:
-
-- professional experience;
+- verified professional experience;
+- strongly corroborated experience;
+- programme/team-level evidence;
+- estimates and scenarios;
 - independent proofs of concept;
 - live public work;
 - synthetic evaluation data;
-- in-development capability;
-- and areas where no production/performance claim is made.
+- in-development capability.
 
-Key boundaries include:
+The public site does not reproduce:
+- original Philips dashboards, spreadsheets or internal slides;
+- detailed customer / retailer / transaction / SKU data;
+- proprietary CAE geometry, boundary conditions or material data;
+- HR, succession or compensation documents;
+- tax/entity/cost-centre records;
+- confidential launch roadmaps or unapproved future scenarios.
 
-- Banking does not claim employment at ABN AMRO, production deployment, fraud/AML specialisation or real-customer behavioural modelling.
-- Pricing clearly separates public Hotel Booking Demand data from the synthetic pricing-treatment layer.
-- Supply Chain explicitly states that no completed supply-chain performance result is claimed yet.
-- AI Transformation does not claim enterprise-scale production AI deployment.
-- Professional case studies do not expose confidential employer/client data.
+Public patent figures and clearly labelled public product-family context may be used.
 
-## Link / asset integrity
-
-All local stylesheet, script, image and internal-page references used by the public HTML currently resolve to repository files.
-
-External evidence links include:
-- LinkedIn
-- GitHub
-- Pricing live workbench
-- Pricing repository
-- PerfectCare patent
-- ENWAKE patent
-
-## Repository status
+## Repository / implementation
 
 - Static HTML / CSS / vanilla JavaScript
 - GitHub Pages
 - No build step
 - No runtime framework dependency
+- Shared canonical portfolio navigation in `script.js`
 - No API credentials in the public site
-- No local Windows drive paths in rendered site content
+- No local Windows paths in rendered public content
 
-## Portfolio freeze
+## Release gate
 
-The core portfolio architecture and visual system are considered **stable and shareable**.
+Before merging the V16 refresh:
+1. compare branch with `main`;
+2. verify canonical navigation includes Project Economics;
+3. verify legacy redirects;
+4. verify no stale headline claim remains on Home, Finance or Engineering;
+5. merge through a pull request;
+6. smoke-test the live GitHub Pages URLs after deployment.
 
-Future changes should be:
-1. evidence-led;
-2. targeted to a specific hiring use case; or
-3. corrective fixes for genuine defects.
-
-Broad redesigns are not recommended while active job applications are underway.
+After those checks, the site is suitable for CV deep links, applications, referrals and recruiter / hiring-manager review.
