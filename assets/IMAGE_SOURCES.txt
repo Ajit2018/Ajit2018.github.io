@@ -24,6 +24,18 @@ Philips dry-iron image
 - Source: image supplied for Ajit's personal portfolio
 - Current V16 public pages do not use this image as evidence for historical volume/cost claims
 
+Engineering visual-enrichment review assets
+- assets/engineering/steam-generator-iron-context.png
+- assets/engineering/shaver-product-context.png
+- assets/engineering/toothbrush-product-context.png
+- assets/engineering/heater-thermal-context.jpg
+- assets/engineering/toothbrush-stress-extract.jpg
+- Source: isolated embedded media extracted from the previously reviewed `Simulations Examples_Ajit.pptx` presentation; no slide text, filenames, paths, tables or notes are included in the exported assets.
+- Status: REVIEW REQUIRED before merge to the live site.
+- Intended use: product/system context and one bounded team-level simulation-to-test example.
+- Claim boundary: these images do not establish sole model authorship, product ownership, commercial outcome or personal execution of every represented simulation.
+- Merge rule: Ajit should approve these five assets explicitly before they are included on the public main branch. If approval is not granted, remove the five assets and retain the public patent figures, Ajit-supplied repository product photographs and representative HTML/CSS visuals only.
+
 ENWAKE career images
 - assets/career/enwake-*.jpg / *.webp
 - Source: supplied by Ajit Pal Singh from his career / public-event archive
