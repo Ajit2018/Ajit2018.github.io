@@ -2,14 +2,42 @@ AJIT AI DECISION INTELLIGENCE — IMAGE SOURCES
 
 ajit-portrait.png
 - Source: supplied directly by Ajit Pal Singh
-- Source site / URL: not applicable
-- Creator: user-supplied professional portrait
-- Use note: approved by the subject for use in this personal portfolio
+- Use: personal portfolio portrait
+- Status: approved by subject
 
-Project cover visuals
-- Source: original inline SVG diagrams created for this portfolio
+Engineering patent figures
+- assets/engineering/patent-fig11-soleplate.png
+- assets/engineering/patent-fig12-system.png
+- Source: public patent EP 2 430 229 B1 / Google Patents
+- Public evidence link: https://patents.google.com/patent/EP2430229B1/en?inventor=Ajit+Pal+Singh
+- Use: patent-evidence context with explicit patent citation
+
+PerfectCare / Philips product-context images
+- assets/engineering/perfectcare-blue-clean.jpg
+- related PerfectCare product images in assets/engineering/
+- Source: images supplied by Ajit Pal Singh for his personal portfolio
+- Use: product-family context only
+- Claim boundary: not presented as proof that a specific retail SKU is the exact embodiment of a patent or a specific internal simulation project
+
+Philips dry-iron image
+- assets/engineering/philips-dry-iron-hd1134.jpg
+- Source: image supplied for Ajit's personal portfolio
+- Current V16 public pages do not use this image as evidence for historical volume/cost claims
+
+ENWAKE career images
+- assets/career/enwake-*.jpg / *.webp
+- Source: supplied by Ajit Pal Singh from his career / public-event archive
+- Use: personal venture and public-event context
+
+Education logos
+- RSM / Erasmus University and IIT Madras logo images are loaded from Wikimedia-hosted public URLs where used
+- NUS logo is loaded from the NUS public website
+- Use: institutional identification only
+
+Portfolio diagrams
+- HTML/CSS diagrams, decision flows, architecture blocks and synthetic visual structures are original portfolio implementation
 - External source URL: none
-- Creator: portfolio implementation
-- Use note: original diagrams; no external image license required
+- Use: explanatory diagrams, not reproductions of confidential employer dashboards
 
-No externally sourced stock photography or illustrations are currently used.
+CONFIDENTIALITY RULE
+Original Philips internal dashboards, slides, spreadsheets, proprietary CAE models, CAD geometry, boundary conditions, detailed test data, customer/retailer transaction data, HR material and future product roadmaps are not to be published as visual assets.
