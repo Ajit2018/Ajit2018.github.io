@@ -3187,3 +3187,163 @@ body.home-mode main{
     writing-mode: horizontal-tb;
   }
 }
+
+
+/* ENGINEERING VISUAL FINAL PASS */
+.engineering-case .case-hero-grid{
+  grid-template-columns:minmax(0,1.15fr) minmax(360px,.85fr);
+  gap:18px;
+  align-items:start;
+}
+.engineering-case .engineering-patent-visual{
+  transform:scale(.96);
+  transform-origin:top right;
+}
+.engineering-case .engineering-context-section{
+  margin-top:32px;
+  padding-top:24px;
+}
+.engineering-case .engineering-visual-section-head.compact{
+  grid-template-columns:minmax(0,1fr) minmax(300px,.72fr);
+  gap:24px;
+  margin-bottom:14px;
+}
+.engineering-case .engineering-visual-section-head.compact h2{
+  max-width:20ch;
+  font-size:clamp(1.85rem,3vw,2.65rem);
+  line-height:1.02;
+}
+.engineering-case .engineering-visual-section-head.compact>p{
+  font-size:14px;
+  line-height:1.5;
+}
+.product-context-strip{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
+}
+.product-strip-card{
+  margin:0;
+  display:grid;
+  grid-template-rows:130px auto;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:#fff;
+  box-shadow:var(--shadow-soft);
+}
+.product-strip-card img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  padding:10px;
+  background:linear-gradient(145deg,#fff,#f2f7fa);
+}
+.product-strip-card.patent-context-card img{
+  mix-blend-mode:multiply;
+}
+.product-strip-card figcaption{
+  padding:10px 11px 12px;
+  display:grid;
+  gap:3px;
+}
+.product-strip-card figcaption b{
+  color:#123c55;
+  font-size:13px;
+  line-height:1.2;
+}
+.product-strip-card figcaption span{
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.35;
+}
+.engineering-simulation-section{
+  margin-top:28px!important;
+}
+.simulation-gallery{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+}
+.simulation-card{
+  margin:0;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#fff;
+  box-shadow:var(--shadow-soft);
+}
+.simulation-card-media{
+  aspect-ratio:4/3;
+  min-height:0;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  background:#f3f7fa;
+}
+.simulation-card-media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.simulation-card figcaption{
+  padding:13px 15px 15px;
+  display:grid;
+  gap:4px;
+}
+.simulation-card figcaption small{
+  color:var(--cyan);
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.1em;
+}
+.simulation-card figcaption b{
+  color:#0d3853;
+  font-size:16px;
+}
+.simulation-card figcaption span{
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.45;
+}
+.engineering-case .engineering-visual-evidence-note{
+  margin-top:12px;
+  font-size:13px;
+  line-height:1.45;
+}
+@media(max-width:980px){
+  .engineering-case .case-hero-grid{
+    grid-template-columns:1fr;
+  }
+  .engineering-case .engineering-patent-visual{
+    transform:none;
+  }
+  .product-context-strip{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:760px){
+  .engineering-case .engineering-context-section{
+    margin-top:22px;
+    padding-top:18px;
+  }
+  .engineering-case .engineering-visual-section-head.compact{
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+  .simulation-gallery{
+    grid-template-columns:1fr;
+  }
+}
+@media(max-width:520px){
+  .product-context-strip{
+    grid-template-columns:1fr 1fr;
+  }
+  .product-strip-card{
+    grid-template-rows:105px auto;
+  }
+  .product-strip-card figcaption span{
+    display:none;
+  }
+}
