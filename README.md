@@ -4,63 +4,81 @@ This repository powers my professional portfolio:
 
 **Live portfolio:** https://ajit2018.github.io/
 
-The site presents a career progression from engineering and product innovation through customer, pricing, finance and data science to AI-enabled decision intelligence. It is designed as a senior-professional evidence portfolio: concise at first glance, with deeper case-study evidence when a hiring manager wants to explore further.
+The site presents an evidence-controlled career progression from engineering and product development through portfolio, pricing and finance analytics to AI-enabled decision intelligence.
+
+## Evidence standard
+
+The portfolio is aligned to **Master Profile V16**, which was rebuilt from a structured Philips evidence review. Public claims distinguish between:
+
+- directly verified personal contribution,
+- strongly corroborated contribution,
+- team / programme-level evidence,
+- estimates and scenarios,
+- and claims that remain qualified.
+
+Confidential Philips dashboards, transaction details, HR records, proprietary CAE geometry, solver models and internal product plans are not published.
 
 ## Portfolio structure
 
 ### Home
-A one-screen career infographic summarising the progression:
 
-**Engineering → Product Innovation → Strategy / Commercial → Pricing → Finance / Data Science → AI Decision Intelligence**
+A compact career map summarises:
 
-### Portfolio
-The main Portfolio entry opens directly on Banking so the domain selector is immediately visible and self-explanatory.
+**Engineering & CAE → Product & Portfolio → Pricing → Finance & Data Science → AI Decision Intelligence**
 
-Current portfolio domains:
+The headline proof points use evidence-backed figures such as six Philips patent families/publications, ten consumer-product CAE examples, approximately two million records in first-stage price analytics, 17 markets in Price Harmonisation, and more than €450M annual STTI analytics scope.
+
+### Portfolio domains
 
 1. **Banking Transaction Intelligence** — independent POC using ABN AMRO developer-sandbox schema fidelity plus a clearly separated synthetic longitudinal evaluation dataset.
-2. **Pricing & RGM** — live B2B Pricing Experimentation Workbench connecting conversion uplift, contribution economics and targeting decisions.
-3. **Global Price Harmonisation & Finance Analytics** — professional Royal Philips case study covering 17 markets, KPI governance, value-leakage analysis and executive decision support.
-4. **Engineering, Innovation & Product Development** — professional Philips case study covering FEA / CFD, PerfectCare innovation, patents, technical project leadership and product industrialisation.
-5. **Customer, Portfolio & Value Analytics** — segmentation, conjoint-based volumetric simulation, value pricing and portfolio analytics.
-6. **Manufacturing, Industrialisation & Scale-Up** — product design-to-production, supplier coordination, pilot / ramp-up, cost reduction and engineering-capability scaling.
-7. **Supply Chain Decision Intelligence** — explicitly labelled in-development capability blueprint for network risk, scenarios and human-in-the-loop mitigation decisions.
-8. **AI Products & Transformation** — decision-first AI architecture around trusted data, deterministic analytics, governed AI / RAG / agents and human accountability.
+2. **Pricing & RGM** — live B2B Pricing Experimentation Workbench connecting experimentation, contribution economics and targeting decisions.
+3. **Finance, Pricing & Decision Analytics** — professional Philips evidence covering 17-market Price Harmonisation, Project Kuber, first-stage Price Optimization, STTI analytics and Group Tax decision support.
+4. **Project Economics & Portfolio Analytics** — professional Philips evidence covering MR NPI business-case realisation and China portfolio / range analytics.
+5. **Engineering, CAE & Product Development** — professional Philips evidence covering ANSYS-based thermal and structural CAE, simulation-to-test correlation, cross-site simulation leadership and six patent families/publications.
+6. **AI Products & Transformation** — current practice around decision-first, governed AI and human-in-the-loop analytical workflows; no enterprise-scale production-AI claim is made where it is not evidenced.
+7. **Supply Chain Decision Intelligence** — explicitly labelled in-development capability blueprint.
 
-Each case study uses a consistent three-level navigation model:
+Legacy Customer and Manufacturing URLs redirect to the evidence-controlled Project Economics and Engineering case studies.
+
+## Selected quantified evidence
+
+Public wording preserves the original evidence boundary:
+
+- **€20M+** — estimated annual pricing/value-leakage exposure in Project Kuber; Ajit documented as core-team Data Analysis.
+- **17 markets** — Price Harmonisation decision-support scope.
+- **~2M records** — first-stage PH Price Optimization using Python and Power BI.
+- **>€450M** — annual STTI / promotional-spend analytics scope.
+- **>€10M** — internal annualised Group Tax risk-mitigation estimate; not booked savings.
+- **~€300M** — annual-sales scale of two MR launches; not personal revenue impact.
+- **~€2M** — internal estimated NPI project value; not a realised-benefit claim.
+- **7.7% value decline despite 4% volume growth** — personally authored China shaver investigation.
+- **53 of 330 SKUs = 80% of market value** — portfolio-concentration evidence supporting range prioritisation.
+- **123°C → 107°C** — calculated peak-temperature improvement identified in Ajit's 2006 Bangkok thermal study.
+- **40 → 50 g/min** — target in co-developed high-steam concept work.
+
+## Engineering claim boundary
+
+The public engineering page supports:
+
+- ANSYS-based thermal and structural CAE,
+- transient thermal optimisation,
+- nonlinear structural/contact analysis,
+- simulation-to-test correlation,
+- cross-site simulation collaboration and knowledge transfer,
+- product-development simulation,
+- and six Philips patent families/publications.
+
+Historical claims around extensive personal FLUENT execution, PerfectCare cyclone CFD, multiphase / phase-change CFD, broad simulation-volume counts, and some historical Singapore scale/savings figures remain qualified and are not used as verified public headline claims.
+
+## Navigation model
+
+Case studies use a shared three-level navigation model:
 
 - **Level 1:** Home | Portfolio | Career Journey | About | Contact
-- **Level 2:** Portfolio domain selector
-- **Level 3:** Overview | Business Problem | Architecture / Decision System | Results / Impact | Methods / Technical Deep Dive | Responsible AI / Boundaries
+- **Level 2:** portfolio domain selector
+- **Level 3:** Overview | Business Problem / Evidence | Decision System | Evidence / Impact | Methods | Boundaries
 
-## Career Journey
-
-The Career Journey section connects the portfolio to the underlying professional history rather than presenting disconnected projects. Signature evidence includes:
-
-- PerfectCare cyclonic steam technology and public patent evidence.
-- Advanced Technology Centre cross-category engineering and technology consulting.
-- ENWAKE entrepreneurship / venture building, including prototype and public-event evidence.
-- Global pricing and finance analytics at Royal Philips.
-
-## Public evidence and claim boundaries
-
-The portfolio intentionally distinguishes between:
-
-- professional experience,
-- independent proofs of concept,
-- live public work,
-- synthetic evaluation data,
-- in-development capability,
-- and areas where no production or performance claim is made.
-
-Examples:
-
-- Banking uses real developer-sandbox API/schema evidence and a separate synthetic longitudinal dataset for evaluation; it does **not** claim employment at ABN AMRO or use of real customer banking data.
-- Pricing uses public Hotel Booking Demand data plus a transparent synthetic pricing-treatment layer.
-- Supply Chain is explicitly marked as in development; no completed supply-chain AI deployment or performance result is claimed.
-- AI Transformation does not claim enterprise-scale production AI deployment.
-
-## Selected public links
+## Public links
 
 - **Portfolio:** https://ajit2018.github.io/
 - **Pricing workbench:** https://ajit-b2b-pricing-workbench.streamlit.app/
@@ -71,14 +89,11 @@ Examples:
 
 - Static HTML / CSS / JavaScript
 - GitHub Pages deployment
-- No runtime framework dependency
 - Responsive desktop and mobile layouts
-- Case-study state controlled by URL hash
-- Shared navigation and tab logic
-- Public assets stored in the repository
+- URL-hash controlled case-study tabs
+- Shared canonical portfolio navigation
+- Public-safe images and diagrams only
 
 ## Current status
 
-**Shareable for CVs, recruiter outreach, hiring-manager discussions and networking.**
-
-The core architecture and visual system are considered stable. Future changes should be evidence-led and targeted to a specific hiring use case rather than broad redesigns.
+The public site is intended for recruiter outreach, CV deep links and hiring-manager review. Future changes should be evidence-led and tied to specific hiring use cases rather than broad redesign.
