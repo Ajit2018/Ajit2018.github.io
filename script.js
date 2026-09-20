@@ -7,11 +7,10 @@
     path==='banking.html'?'banking':
     path==='pricing.html'?'pricing':
     path==='finance.html'?'finance':
+    path==='project-economics.html'?'project-economics':
     path==='engineering.html'?'engineering':
-    path==='customer.html'?'customer':
-    path==='manufacturing.html'?'manufacturing':
-    path==='supply-chain.html'?'supply-chain':
-    path==='ai-transformation.html'?'ai-transformation':'';
+    path==='ai-transformation.html'?'ai-transformation':
+    path==='supply-chain.html'?'supply-chain':'';
 
   const root=location.pathname.includes('/projects/')?'':'projects/';
   const item=(name,label,kind)=>`<a class="${kind}${active===name?' active':''}" href="${root}${name}.html#overview">${label}</a>`;
@@ -19,11 +18,10 @@
     item('banking','Banking','case')+
     item('pricing','Pricing &amp; RGM','live')+
     item('finance','Finance','professional')+
+    item('project-economics','Project Economics','professional')+
     item('engineering','Engineering &amp; Innovation','professional')+
-    item('customer','Customer','secondary')+
-    item('manufacturing','Manufacturing','secondary')+
-    item('supply-chain','Supply Chain','planned')+
-    item('ai-transformation','AI Transformation','secondary');
+    item('ai-transformation','AI Transformation','secondary')+
+    item('supply-chain','Supply Chain','planned');
 })();
 
 const menuButton=document.querySelector('[data-menu-button]');
