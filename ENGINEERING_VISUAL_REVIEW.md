@@ -3,7 +3,7 @@
 **Branch:** `review/engineering-visual-enrichment-v16`  
 **Scope:** visual enrichment of `projects/engineering.html` only.  
 **Evidence authority:** Master Profile V16.  
-**Live-site status:** local review branch only; not pushed and not merged.
+**Live-site status:** public review branch; not merged to `main`.
 
 ## Page changes
 
@@ -39,9 +39,9 @@ The following page elements are suitable for the public main branch without furt
 - representative HTML/CSS decision-flow visual;
 - styling and responsive behaviour.
 
-## Requires Ajit approval before merge
+## Approval status
 
-No internal-presentation extract remains in the proposed page. Final approval is still required for the overall visual selection and for retaining the Wikimedia CC BY-SA asset with its attribution. The PerfectCare image uses Ajit's existing portfolio-supplied asset; the shaver and Sonicare images come from the Philips Media Library.
+Final visual/provenance review completed. No internal-presentation extract remains in the proposed page. The Ajit-supplied PerfectCare image, Philips Media Library shaver and Sonicare images, CC BY-SA heating-element illustration, public patent figures and synthetic structural visual are approved for public portfolio use under the documented claim boundaries and attribution requirements.
 
 ## Synthetic structural visual provenance
 
@@ -58,7 +58,7 @@ No internal-presentation extract remains in the proposed page. Final approval is
 
 ## Recommended merge path
 
-1. Review the revised branch locally.
-2. Confirm the Ajit-supplied PerfectCare image, the two Philips Media Library images, the attributed Wikimedia illustration and the synthetic structural visual.
-3. Push only after Ajit gives final approval.
-4. Merge only after the pushed review branch has passed the normal preview checks.
+1. Keep the documented provenance and CC BY-SA attribution intact.
+2. Merge through a pull request after source-level QA.
+3. Smoke-check the deployed Engineering page after GitHub Pages updates.
+4. Treat further changes as vacancy-driven or corrective rather than broad redesign.
