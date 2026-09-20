@@ -67,3 +67,21 @@ Portfolio diagrams
 
 CONFIDENTIALITY RULE
 Original Philips internal dashboards, slides, spreadsheets, proprietary CAE models, CAD geometry, boundary conditions, detailed test data, customer/retailer transaction data, HR material and future product roadmaps are not to be published as visual assets.
+
+
+Engineering simulation visuals — final visual pass
+- assets/engineering/thermal-optimization-visual.svg
+  Source: original public-safe vector illustration created for this portfolio
+  Use: representative thermal-optimization visual aligned to evidence-controlled thermal work
+  Classification: REPRESENTATIVE / SYNTHETIC
+  Claim boundary: not an original Philips solver screenshot, CAD model, or internal result export
+- assets/engineering/cfd-flow-analysis-visual.svg
+  Source: original public-safe vector illustration created for this portfolio
+  Use: representative flow / thermal modelling visual
+  Classification: REPRESENTATIVE / SYNTHETIC
+  Claim boundary: does not assert that the displayed geometry or flow field is an original Philips result
+- assets/engineering/simulation-to-test-visual.svg
+  Source: original public-safe vector illustration created for this portfolio
+  Use: representative model-to-test / failure-correlation visual
+  Classification: REPRESENTATIVE / SYNTHETIC
+  Claim boundary: no internal product geometry, measured values or confidential test imagery
