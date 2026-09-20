@@ -55,11 +55,11 @@ The September 20 refresh deliberately removed or qualified older public claims t
 
 Examples:
 - “six international patents” → **six Philips patent families/publications**;
-- broad FLUENT / PerfectCare cyclone / multiphase CFD statements are no longer presented as verified headline claims;
-- historical Singapore figures such as ~80 designers, ~20% cost reduction, ~3M units/year and offshore scale are no longer used as verified public proof points;
+- FLUENT / PerfectCare cyclone / multiphase CFD experience is now included as practitioner-confirmed history because Ajit directly confirms it and the surviving archive is incomplete;
+- historical Singapore figures of ~80 designers, ~20% cost reduction at ~3M units/year and offshore R&D scale-up to 100+ engineers are likewise included as practitioner-confirmed facts, not archive-verified proof points;
 - 250+ senior-user language was removed where the final evidence baseline did not retain it as a preferred public claim;
 - Finance now uses directly evidenced or correctly bounded metrics: 17 markets, €20M+ estimated Kuber exposure, ~2M Price Optimization records, >€450M STTI scope and >€10M internal Group Tax risk-mitigation estimate;
-- Project Economics now exposes the verified MR NPI and China portfolio evidence with estimate/scenario boundaries;
+- Project Economics now exposes the verified MR NPI and China portfolio evidence; Ajit confirms selected China scenario / range decisions were later realised, while his role is bounded to analytical support rather than decision ownership;
 - Engineering now centres on ANSYS CAE, transient thermal work, nonlinear structural/contact analysis, simulation-to-test evidence, cross-site simulation leadership and patent evidence.
 
 ## Responsive / mobile status
@@ -81,6 +81,7 @@ The portfolio deliberately separates:
 - strongly corroborated experience;
 - programme/team-level evidence;
 - estimates and scenarios;
+- practitioner-confirmed historical facts where surviving records are incomplete;
 - independent proofs of concept;
 - live public work;
 - synthetic evaluation data;
