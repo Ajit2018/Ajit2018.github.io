@@ -13,9 +13,10 @@ Engineering patent figures
 - Use: patent-evidence context with explicit patent citation
 
 PerfectCare / Philips product-context images
-- assets/engineering/perfectcare-blue-clean.jpg
-- related PerfectCare product images in assets/engineering/
-- Source: images supplied by Ajit Pal Singh for his personal portfolio
+- Live Engineering page uses an official Philips high-resolution PerfectCare Pure product image from the Philips image CDN
+- Product page: https://www.philips.com/c-p/GC7620_30R1/perfectcare-pure-steam-generator-iron
+- CDN image: https://images.philips.com/is/image/philipsconsumer/2fd3b8d7196a4bcc8ef1ad140003c34f?%24pnglarge%24=&wid=1250
+- Existing local PerfectCare images remain in the repository as historical/fallback assets
 - Use: product-family context only
 - Claim boundary: not presented as proof that a specific retail SKU is the exact embodiment of a patent or a specific internal simulation project
 
