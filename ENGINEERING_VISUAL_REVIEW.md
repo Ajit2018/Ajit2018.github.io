@@ -20,11 +20,10 @@
 |---|---|---|---|---|---|
 | `patent-fig11-soleplate.png` | Existing hero patent figure | Public EP 2 430 229 B1 figure | **PUBLIC** | Safe with patent citation | Merge-ready |
 | `patent-fig12-system.png` | Hero and Selected Engineering Visuals | Public EP 2 430 229 B1 figure | **PUBLIC** | Safe with patent citation | Merge-ready |
-| `perfectcare-product-context.jpg` | PerfectCare product-family context | Supplied by Ajit; already documented in repo | **PUBLIC** | Safe as product-family context, not exact patent/simulation proof | Merge-ready under existing approval |
+| `perfectcare-product-context.jpg` | PerfectCare product-family context and steam-generator system context | Supplied by Ajit; already documented in repo | **PUBLIC** | Safe as product-family context, not exact patent/simulation proof | Merge-ready under existing approval |
 | `philips-dry-iron-hd1134.jpg` | Dry-iron product context | Supplied by Ajit; already documented in repo | **PUBLIC** | Safe only as product context; no historical volume/cost inference | Merge-ready under existing approval |
-| `perfectcare-public-product.png` | Steam-generator product/system context | [Official Philips PerfectCare Pure product page](https://www.philips.com/c-p/GC7620_30R1/perfectcare-pure-steam-generator-iron); downloaded from Philips image CDN | **PUBLIC** | Public product-family context only; it is not presented as the exact simulated or patented unit | Merge-ready |
 | `shaver-series-9000-public.jpg` | Rotary-shaver product context | [Official Philips media library, Shaver Series 9000 Prestige](https://www.philips.com/a-w/about/news/media-library/20180830-Philips-Shaver-Series-9000-Prestige-04.cs) | **PUBLIC** | Official public press/product image; no internal mechanism geometry | Merge-ready |
-| `sonicare-public-product.png` | Electric-toothbrush product context | [Official Philips Sonicare FlexCare+ product page](https://www.philips.com/c-p/HX6972_03/flexcare-plus-sonic-electric-toothbrush) | **PUBLIC** | Public product-family context only; no internal result is shown | Merge-ready |
+| `sonicare-diamondclean-media.jpg` | Electric-toothbrush product-family context | [Official Philips Media Library, Sonicare DiamondClean Smart](https://www.philips.com/a-w/about/news/media-library/20180109-Philips-Sonicare-DiamondClean-Smart.html), published 9 January 2018 | **PUBLIC** | Official public media asset; used only as broadly period-consistent product-family context, not exact-SKU or project evidence | Merge-ready |
 | `tubular-heating-element-public.png` | Heater/thermal-system context | [Wikimedia Commons: Tubular heating element 1](https://commons.wikimedia.org/wiki/File:Tubular_heating_element_1.png), P.Fisxo, CC BY-SA 4.0 | **PUBLIC** | Generic educational cutaway; attribution and license retained here and in `assets/IMAGE_SOURCES.txt` | Merge-ready subject to CC BY-SA attribution retention |
 | `representative-structural-stress.png` | Failure-location-correlation concept | Newly generated generic finite-element bracket illustration; prompt recorded below | **REPRESENTATIVE / SYNTHETIC** | No Philips geometry, result values, labels, filenames or internal data | Merge-ready |
 | HTML/CSS engineering decision flow | Product-to-decision narrative | Original portfolio implementation | **REPRESENTATIVE / SYNTHETIC** | Contains no Philips source data | Merge-ready |
@@ -42,7 +41,7 @@ The following page elements are suitable for the public main branch without furt
 
 ## Requires Ajit approval before merge
 
-No internal-presentation extract remains in the proposed page. Final approval is still required for the overall visual selection and for retaining the Wikimedia CC BY-SA asset with its attribution.
+No internal-presentation extract remains in the proposed page. Final approval is still required for the overall visual selection and for retaining the Wikimedia CC BY-SA asset with its attribution. The PerfectCare image uses Ajit's existing portfolio-supplied asset; the shaver and Sonicare images come from the Philips Media Library.
 
 ## Synthetic structural visual provenance
 
@@ -60,6 +59,6 @@ No internal-presentation extract remains in the proposed page. Final approval is
 ## Recommended merge path
 
 1. Review the revised branch locally.
-2. Confirm the four public-source product/hardware choices and the synthetic structural visual.
+2. Confirm the Ajit-supplied PerfectCare image, the two Philips Media Library images, the attributed Wikimedia illustration and the synthetic structural visual.
 3. Push only after Ajit gives final approval.
 4. Merge only after the pushed review branch has passed the normal preview checks.

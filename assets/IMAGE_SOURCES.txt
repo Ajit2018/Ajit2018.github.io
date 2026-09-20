@@ -25,17 +25,18 @@ Philips dry-iron image
 - Current V16 public pages do not use this image as evidence for historical volume/cost claims
 
 Engineering visual-enrichment review assets
-- assets/engineering/perfectcare-public-product.png
-  Source: official Philips PerfectCare Pure product page and Philips image CDN
-  Page: https://www.philips.com/c-p/GC7620_30R1/perfectcare-pure-steam-generator-iron
+- assets/engineering/perfectcare-product-context.jpg
+  Source: supplied by Ajit Pal Singh for his personal portfolio; existing repository asset
+  Use: PerfectCare and steam-generator product-family context only
   Classification: PUBLIC
 - assets/engineering/shaver-series-9000-public.jpg
   Source: official Philips media library, Shaver Series 9000 Prestige
   Page: https://www.philips.com/a-w/about/news/media-library/20180830-Philips-Shaver-Series-9000-Prestige-04.cs
   Classification: PUBLIC
-- assets/engineering/sonicare-public-product.png
-  Source: official Philips Sonicare FlexCare+ product page and Philips image CDN
-  Page: https://www.philips.com/c-p/HX6972_03/flexcare-plus-sonic-electric-toothbrush
+- assets/engineering/sonicare-diamondclean-media.jpg
+  Source: official Philips Media Library, Sonicare DiamondClean Smart; asset published 9 January 2018
+  Page: https://www.philips.com/a-w/about/news/media-library/20180109-Philips-Sonicare-DiamondClean-Smart.html
+  Use: broadly period-consistent product-family context; exact SKU identity is not claimed
   Classification: PUBLIC
 - assets/engineering/tubular-heating-element-public.png
   Source: Wikimedia Commons, `Tubular heating element 1.png`, author P.Fisxo
