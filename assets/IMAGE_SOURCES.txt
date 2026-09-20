@@ -25,16 +25,29 @@ Philips dry-iron image
 - Current V16 public pages do not use this image as evidence for historical volume/cost claims
 
 Engineering visual-enrichment review assets
-- assets/engineering/steam-generator-iron-context.png
-- assets/engineering/shaver-product-context.png
-- assets/engineering/toothbrush-product-context.png
-- assets/engineering/heater-thermal-context.jpg
-- assets/engineering/toothbrush-stress-extract.jpg
-- Source: isolated embedded media extracted from the previously reviewed `Simulations Examples_Ajit.pptx` presentation; no slide text, filenames, paths, tables or notes are included in the exported assets.
-- Status: REVIEW REQUIRED before merge to the live site.
-- Intended use: product/system context and one bounded team-level simulation-to-test example.
-- Claim boundary: these images do not establish sole model authorship, product ownership, commercial outcome or personal execution of every represented simulation.
-- Merge rule: Ajit should approve these five assets explicitly before they are included on the public main branch. If approval is not granted, remove the five assets and retain the public patent figures, Ajit-supplied repository product photographs and representative HTML/CSS visuals only.
+- assets/engineering/perfectcare-public-product.png
+  Source: official Philips PerfectCare Pure product page and Philips image CDN
+  Page: https://www.philips.com/c-p/GC7620_30R1/perfectcare-pure-steam-generator-iron
+  Classification: PUBLIC
+- assets/engineering/shaver-series-9000-public.jpg
+  Source: official Philips media library, Shaver Series 9000 Prestige
+  Page: https://www.philips.com/a-w/about/news/media-library/20180830-Philips-Shaver-Series-9000-Prestige-04.cs
+  Classification: PUBLIC
+- assets/engineering/sonicare-public-product.png
+  Source: official Philips Sonicare FlexCare+ product page and Philips image CDN
+  Page: https://www.philips.com/c-p/HX6972_03/flexcare-plus-sonic-electric-toothbrush
+  Classification: PUBLIC
+- assets/engineering/tubular-heating-element-public.png
+  Source: Wikimedia Commons, `Tubular heating element 1.png`, author P.Fisxo
+  Page: https://commons.wikimedia.org/wiki/File:Tubular_heating_element_1.png
+  License: CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/
+  Classification: PUBLIC
+- assets/engineering/representative-structural-stress.png
+  Source: newly generated generic finite-element stress illustration for this portfolio; no source image was used
+  Classification: REPRESENTATIVE / SYNTHETIC
+  Restrictions: no Philips geometry, branding, internal values, filenames or solver-interface content
+- Claim boundary: product photographs establish product-family context only. The synthetic structural visual illustrates a method and is not evidence of a particular Philips simulation result.
+- Removed from publication: every image extracted from `Simulations Examples_Ajit.pptx`, including `toothbrush-stress-extract.jpg`.
 
 ENWAKE career images
 - assets/career/enwake-*.jpg / *.webp

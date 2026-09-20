@@ -3,7 +3,7 @@
 **Branch:** `review/engineering-visual-enrichment-v16`  
 **Scope:** visual enrichment of `projects/engineering.html` only.  
 **Evidence authority:** Master Profile V16.  
-**Live-site status:** review branch only; do not merge until the review-required assets are approved or removed.
+**Live-site status:** local review branch only; not pushed and not merged.
 
 ## Page changes
 
@@ -22,11 +22,11 @@
 | `patent-fig12-system.png` | Hero and Selected Engineering Visuals | Public EP 2 430 229 B1 figure | **PUBLIC** | Safe with patent citation | Merge-ready |
 | `perfectcare-product-context.jpg` | PerfectCare product-family context | Supplied by Ajit; already documented in repo | **PUBLIC** | Safe as product-family context, not exact patent/simulation proof | Merge-ready under existing approval |
 | `philips-dry-iron-hd1134.jpg` | Dry-iron product context | Supplied by Ajit; already documented in repo | **PUBLIC** | Safe only as product context; no historical volume/cost inference | Merge-ready under existing approval |
-| `steam-generator-iron-context.png` | Steam-generator product/system context | Isolated embedded image from previously reviewed `Simulations Examples_Ajit.pptx` | **REVIEW REQUIRED** | No internal text/path/data visible, but source deck is internal | Await Ajit approval |
-| `shaver-product-context.png` | Rotary-shaver product context | Same reviewed deck | **REVIEW REQUIRED** | No internal text/path/data visible; product-photo publication rights/source need confirmation | Await Ajit approval |
-| `toothbrush-product-context.png` | Electric-toothbrush product context | Same reviewed deck | **REVIEW REQUIRED** | No internal text/path/data visible; product-photo publication rights/source need confirmation | Await Ajit approval |
-| `heater-thermal-context.jpg` | Heater/thermal-system hardware context | Same reviewed deck | **REVIEW REQUIRED** | No file/path/table visible; hardware photograph may still be internal | Await Ajit approval |
-| `toothbrush-stress-extract.jpg` | Team-level failure-correlation visual | Same reviewed deck | **REVIEW REQUIRED** | Isolated result region; no filename/path/table/dimensions. Exact stress legend and geometry remain visible. | Await Ajit approval; remove if any concern |
+| `perfectcare-public-product.png` | Steam-generator product/system context | [Official Philips PerfectCare Pure product page](https://www.philips.com/c-p/GC7620_30R1/perfectcare-pure-steam-generator-iron); downloaded from Philips image CDN | **PUBLIC** | Public product-family context only; it is not presented as the exact simulated or patented unit | Merge-ready |
+| `shaver-series-9000-public.jpg` | Rotary-shaver product context | [Official Philips media library, Shaver Series 9000 Prestige](https://www.philips.com/a-w/about/news/media-library/20180830-Philips-Shaver-Series-9000-Prestige-04.cs) | **PUBLIC** | Official public press/product image; no internal mechanism geometry | Merge-ready |
+| `sonicare-public-product.png` | Electric-toothbrush product context | [Official Philips Sonicare FlexCare+ product page](https://www.philips.com/c-p/HX6972_03/flexcare-plus-sonic-electric-toothbrush) | **PUBLIC** | Public product-family context only; no internal result is shown | Merge-ready |
+| `tubular-heating-element-public.png` | Heater/thermal-system context | [Wikimedia Commons: Tubular heating element 1](https://commons.wikimedia.org/wiki/File:Tubular_heating_element_1.png), P.Fisxo, CC BY-SA 4.0 | **PUBLIC** | Generic educational cutaway; attribution and license retained here and in `assets/IMAGE_SOURCES.txt` | Merge-ready subject to CC BY-SA attribution retention |
+| `representative-structural-stress.png` | Failure-location-correlation concept | Newly generated generic finite-element bracket illustration; prompt recorded below | **REPRESENTATIVE / SYNTHETIC** | No Philips geometry, result values, labels, filenames or internal data | Merge-ready |
 | HTML/CSS engineering decision flow | Product-to-decision narrative | Original portfolio implementation | **REPRESENTATIVE / SYNTHETIC** | Contains no Philips source data | Merge-ready |
 
 ## Safe to merge now
@@ -42,19 +42,16 @@ The following page elements are suitable for the public main branch without furt
 
 ## Requires Ajit approval before merge
 
-The five new files extracted from the internal simulation showcase:
+No internal-presentation extract remains in the proposed page. Final approval is still required for the overall visual selection and for retaining the Wikimedia CC BY-SA asset with its attribution.
 
-1. `steam-generator-iron-context.png`
-2. `shaver-product-context.png`
-3. `toothbrush-product-context.png`
-4. `heater-thermal-context.jpg`
-5. `toothbrush-stress-extract.jpg`
+## Synthetic structural visual provenance
 
-Although each file excludes slide text, filenames, paths, tables and notes, the source presentation is internal. A public Git branch is still publicly accessible, so approval should address both confidentiality and image-publication rights.
+`representative-structural-stress.png` was generated for this review branch as a generic CAE illustration. The prompt requested an unbranded mechanical bracket with a circular mounting hole, a plausible finite-element mesh and stress contour, and explicitly prohibited Philips branding, commercial-product geometry, text, values, filenames, solver UI, watermarks and internal data. It is illustrative, not evidence of a particular simulation result.
 
 ## Should not go live
 
 - Full screenshots of any internal simulation slide.
+- `toothbrush-stress-extract.jpg` and all other internal-presentation extracts previously staged in this branch.
 - Original ANSYS images that show internal filenames, timestamps, dimensions, material data or detailed legends when not necessary.
 - Cutter-model images exposing proprietary mechanism geometry and exact model metadata.
 - China portfolio/range visuals, dashboards, customer/SKU/transaction tables or other unrelated confidential project material.
@@ -62,7 +59,7 @@ Although each file excludes slide text, filenames, paths, tables and notes, the 
 
 ## Recommended merge path
 
-1. Review the branch locally or through the pull-request preview.
-2. Approve or reject each of the five review-required assets.
-3. If rejected, remove those assets and cards while keeping the merge-ready public/representative layer.
-4. Merge only after the page has passed desktop/mobile visual QA and the asset list matches the final approval decision.
+1. Review the revised branch locally.
+2. Confirm the four public-source product/hardware choices and the synthetic structural visual.
+3. Push only after Ajit gives final approval.
+4. Merge only after the pushed review branch has passed the normal preview checks.
