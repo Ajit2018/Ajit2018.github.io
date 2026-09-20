@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="t d">
+<title id="t">CFD Flow Analysis</title><desc id="d">Representative public-safe CFD flow and thermal illustration.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#f2f7fb"/></linearGradient>
+ <linearGradient id="title" x1="0" x2="1"><stop stop-color="#0a3560"/><stop offset=".6" stop-color="#1376ff"/><stop offset="1" stop-color="#6b56ed"/></linearGradient>
+ <linearGradient id="vel" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#1e4df6"/><stop offset=".25" stop-color="#00c9ed"/><stop offset=".55" stop-color="#4fd45c"/><stop offset=".78" stop-color="#ffd23d"/><stop offset="1" stop-color="#ff5438"/></linearGradient>
+ <filter id="s"><feDropShadow dx="0" dy="10" stdDeviation="16" flood-opacity=".12"/></filter>
+</defs>
+<rect width="1200" height="900" rx="28" fill="url(#bg)"/>
+<text x="62" y="72" font-family="Arial" font-size="18" letter-spacing="6" fill="#56718e">FLOW &amp; THERMAL SIMULATION</text>
+<text x="62" y="150" font-family="Arial" font-weight="700" font-size="64" fill="url(#title)">CFD Flow Analysis</text>
+<text x="62" y="196" font-family="Arial" font-size="27" fill="#60738a">Flow and thermal behavior in a simplified channel</text>
+<g transform="translate(65 270)" filter="url(#s)">
+ <rect width="810" height="430" rx="30" fill="#fff" stroke="#dfe8f0"/>
+ <path d="M88 282 H470 Q585 282 585 167 V85 H690" fill="none" stroke="#d3dde6" stroke-width="126" stroke-linecap="round" stroke-linejoin="round"/>
+ <path d="M88 282 H470 Q585 282 585 167 V85 H690" fill="none" stroke="#eef4f8" stroke-width="102" stroke-linecap="round" stroke-linejoin="round"/>
+ <g fill="none" stroke-linecap="round" stroke-width="10">
+  <path d="M80 250 C260 250 360 248 455 244 C520 240 544 210 548 154 C552 110 605 102 694 102" stroke="#1f58fa"/>
+  <path d="M80 268 C265 268 365 268 460 262 C525 257 560 230 566 165 C570 120 610 116 695 116" stroke="#00bce9"/>
+  <path d="M80 286 C260 286 370 286 466 279 C520 275 573 250 584 181 C592 135 626 132 697 132" stroke="#45d46f"/>
+  <path d="M80 304 C260 304 366 304 465 296 C525 291 591 266 602 195 C610 151 638 148 698 148" stroke="#ffd13a"/>
+  <path d="M80 322 C270 322 380 322 475 314 C548 307 607 282 622 211 C630 170 652 168 700 168" stroke="#ff5b3c"/>
+ </g>
+ <circle cx="504" cy="260" r="60" fill="none" stroke="#1f70f2" stroke-width="9" opacity=".75"/>
+ <path d="M465 265 C480 225 538 218 548 258 C558 300 500 318 472 289" fill="none" stroke="#17bde6" stroke-width="10" stroke-linecap="round"/>
+ <text x="40" y="55" font-family="Arial" font-size="16" font-weight="700" fill="#163b5e">INLET FLOW</text>
+ <text x="415" y="55" font-family="Arial" font-size="16" font-weight="700" fill="#163b5e">RECIRCULATION ZONE</text>
+ <text x="624" y="55" font-family="Arial" font-size="16" font-weight="700" fill="#163b5e">THERMAL REGION</text>
+ <text x="40" y="398" font-family="Arial" font-size="13" fill="#75879a">Representative streamline illustration — no proprietary geometry or solver output.</text>
+</g>
+<g transform="translate(910 295)">
+ <rect width="220" height="380" rx="26" fill="#fff" stroke="#dfe8f0" filter="url(#s)"/>
+ <text x="30" y="48" font-family="Arial" font-size="17" font-weight="700" fill="#173a5b">Flow / thermal scale</text>
+ <rect x="38" y="92" width="42" height="220" rx="16" fill="url(#vel)"/>
+ <g font-family="Arial" font-size="13" fill="#667b90">
+  <text x="96" y="105">high</text><text x="96" y="205">mid</text><text x="96" y="310">low</text>
+ </g>
+ <text x="30" y="345" font-family="Arial" font-size="13" fill="#718397">Conceptual legend</text>
+</g>
+<g transform="translate(70 760)">
+ <rect width="1060" height="72" rx="18" fill="#edf5fb"/>
+ <text x="24" y="30" font-family="Arial" font-size="16" font-weight="700" fill="#173a5b">Engineering decision:</text>
+ <text x="186" y="30" font-family="Arial" font-size="16" fill="#5e7288">visualize flow paths and thermal regions → compare concepts → interpret design trade-offs.</text>
+ <text x="24" y="55" font-family="Arial" font-size="13" fill="#7a8ca0">Representative / synthetic illustration.</text>
+</g></svg>
