@@ -14,6 +14,7 @@ The portfolio is aligned to **Master Profile V16**, which was rebuilt from a str
 - strongly corroborated contribution,
 - team / programme-level evidence,
 - estimates and scenarios,
+- practitioner-confirmed historical facts where surviving records are incomplete,
 - and claims that remain qualified.
 
 Confidential Philips dashboards, transaction details, HR records, proprietary CAE geometry, solver models and internal product plans are not published.
@@ -55,6 +56,10 @@ Public wording preserves the original evidence boundary:
 - **53 of 330 SKUs = 80% of market value** — portfolio-concentration evidence supporting range prioritisation.
 - **123°C → 107°C** — calculated peak-temperature improvement identified in Ajit's 2006 Bangkok thermal study.
 - **40 → 50 g/min** — target in co-developed high-steam concept work.
+- **~20% at ~3M units/year** — practitioner-confirmed product-cost reduction on a next-generation iron platform.
+- **~80 designers** — practitioner-confirmed simulation-support scope during the Singapore specialist period.
+- **~10–15 → 100+ engineers** — practitioner-confirmed scale-up of an offshore engineering / R&D partnership.
+- **China range scenarios** — archive-supported analytical contribution; Ajit confirms selected scenario / range decisions were later realised, with his role bounded to analytical support rather than decision ownership.
 
 ## Engineering claim boundary
 
@@ -68,7 +73,7 @@ The public engineering page supports:
 - product-development simulation,
 - and six Philips patent families/publications.
 
-Historical claims around extensive personal FLUENT execution, PerfectCare cyclone CFD, multiphase / phase-change CFD, broad simulation-volume counts, and some historical Singapore scale/savings figures remain qualified and are not used as verified public headline claims.
+Ajit directly confirms extensive hands-on FLUENT use, including PerfectCare cyclone / steam-flow optimisation and multiphase / phase-change CFD, plus the historical Singapore scale figures above. These are retained as practitioner-confirmed facts because the surviving archive is incomplete; they are not presented as archive-verified.
 
 ## Navigation model
 
