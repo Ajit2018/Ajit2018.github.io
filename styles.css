@@ -3347,3 +3347,89 @@ body.home-mode main{
     display:none;
   }
 }
+
+
+/* Industrial simulation visual cards — 2026-09-25 */
+.simulation-case-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+  margin:18px 0 16px;
+}
+.simulation-case-card{
+  min-width:0;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#fff;
+  box-shadow:var(--shadow-soft);
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.simulation-case-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 28px rgba(20,58,82,.10);
+}
+.simulation-case-media{
+  display:block;
+  width:100%;
+  aspect-ratio:16/9;
+  overflow:hidden;
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(145deg,#f7fbfe,#eaf2f7);
+}
+.simulation-case-media img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  transition:transform .22s ease;
+}
+.simulation-case-card:hover .simulation-case-media img{
+  transform:scale(1.018);
+}
+.simulation-case-body{
+  padding:14px 16px 16px;
+}
+.simulation-case-body .mini-badge{
+  display:inline-block;
+  margin-bottom:7px;
+}
+.simulation-case-body h3{
+  margin:0 0 7px;
+  color:#0c3853;
+  font-size:17px;
+  line-height:1.2;
+}
+.simulation-case-body p{
+  margin:0;
+  color:var(--muted);
+  font-size:12.5px;
+  line-height:1.48;
+}
+.simulation-case-body p b{
+  color:#263e4e;
+}
+.simulation-case-card-featured{
+  border-color:rgba(22,146,174,.34);
+  box-shadow:0 12px 28px rgba(16,118,146,.10);
+}
+.simulation-source-note{
+  margin:14px 0 18px;
+  padding:11px 13px;
+  border-left:4px solid var(--cyan);
+  border-radius:0 10px 10px 0;
+  background:#f1f8fb;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.45;
+}
+@media(max-width:760px){
+  .simulation-case-grid{
+    grid-template-columns:1fr;
+    gap:13px;
+  }
+  .simulation-case-media{
+    aspect-ratio:16/10;
+  }
+}
