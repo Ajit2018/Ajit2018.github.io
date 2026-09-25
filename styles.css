@@ -3381,17 +3381,10 @@ body.home-mode main{
   display:block;
   width:100%;
   height:100%;
-  object-fit:cover;
-  object-position:center bottom;
+  object-fit:contain;
+  object-position:center;
   background:#fff;
   transition:transform .22s ease;
-}
-.simulation-case-media.visual-crop img{
-  transform:scale(1.34);
-  transform-origin:center bottom;
-}
-.simulation-case-card:hover .simulation-case-media.visual-crop img{
-  transform:scale(1.37);
 }
 .simulation-case-card:hover .simulation-case-media img{
   transform:scale(1.018);
@@ -3414,6 +3407,12 @@ body.home-mode main{
   color:var(--muted);
   font-size:12.5px;
   line-height:1.48;
+}
+.simulation-case-body .case-story{
+  line-height:1.58;
+}
+.simulation-case-body .case-story b{
+  color:#163f58;
 }
 .simulation-case-body p b{
   color:#263e4e;
