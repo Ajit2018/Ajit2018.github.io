@@ -1,10 +1,10 @@
-# Ajit Pal Singh — AI-Enabled Decision Intelligence
+# Ajit Pal Singh — Computational Engineering, Data Science & AI
 
 This repository powers my professional portfolio:
 
 **Live portfolio:** https://ajit2018.github.io/
 
-The site presents an evidence-controlled career progression from engineering and product development through portfolio, pricing and finance analytics to AI-enabled decision intelligence.
+The site presents a full-circle career: deep computational engineering and product-development experience, broadened through pricing, finance, data science and AI, now converging in AI-enabled simulation and function development.
 
 ## Evidence standard
 
@@ -25,7 +25,7 @@ Confidential Philips dashboards, transaction details, HR records, proprietary CA
 
 A compact career map summarises:
 
-**Engineering & CAE → Product & Portfolio → Pricing → Finance & Data Science → AI Decision Intelligence**
+**Computational Engineering → Function & Product Development → Commercial / Finance → Data Science & ML → AI-Enabled Engineering**
 
 The headline proof points use evidence-backed figures such as six Philips patent families/publications, ten consumer-product CAE examples, approximately two million records in first-stage price analytics, 17 markets in Price Harmonisation, and more than €450M annual STTI analytics scope.
 
@@ -35,7 +35,7 @@ The headline proof points use evidence-backed figures such as six Philips patent
 2. **Pricing & RGM** — live B2B Pricing Experimentation Workbench connecting experimentation, contribution economics and targeting decisions.
 3. **Finance, Pricing & Decision Analytics** — professional Philips evidence covering 17-market Price Harmonisation, Project Kuber, first-stage Price Optimization, STTI analytics and Group Tax decision support.
 4. **Project Economics & Portfolio Analytics** — professional Philips evidence covering MR NPI business-case realisation and China portfolio / range analytics.
-5. **Engineering, CAE & Product Development** — professional Philips evidence covering ANSYS-based thermal and structural CAE, simulation-to-test correlation, cross-site simulation leadership and six patent families/publications.
+5. **Computational Engineering & Simulation** — now the primary technical portfolio: industrial ANSYS/Fluent CFD & FEA, thermal-fluid and transient-dynamic work, simulation-driven function development, automation, and a clearly labelled 2026 AI/ML-enabled CAE roadmap.
 6. **AI Products & Transformation** — current practice around decision-first, governed AI and human-in-the-loop analytical workflows; no enterprise-scale production-AI claim is made where it is not evidenced.
 7. **Supply Chain Decision Intelligence** — explicitly labelled in-development capability blueprint.
 
@@ -102,3 +102,13 @@ Case studies use a shared three-level navigation model:
 ## Current status
 
 The public site is intended for recruiter outreach, CV deep links and hiring-manager review. Future changes should be evidence-led and tied to specific hiring use cases rather than broad redesign.
+
+
+## 2026 technical direction
+
+The primary technical search now covers two complementary paths:
+
+1. **Simulation / Computational Engineering** — CFD, FEA, multiphysics, thermal-fluid, transient dynamics, simulation automation and technical leadership across projects.
+2. **Function Development / Pre-Development** — own a product function, understand the governing physics, use simulation to reduce prototype loops, demonstrate proof-of-concept, and hand over a robust concept for detailed realization.
+
+The Engineering page also documents the bridge from later data-science/ML/AI experience back into computational engineering. New AI/CAE portfolio work is explicitly labelled **In Development** until implemented and validated.
