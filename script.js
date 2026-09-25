@@ -15,11 +15,11 @@
   const root=location.pathname.includes('/projects/')?'':'projects/';
   const item=(name,label,kind)=>`<a class="${kind}${active===name?' active':''}" href="${root}${name}.html#overview">${label}</a>`;
   nav.innerHTML=
+    item('engineering','Engineering &amp; Simulation','professional')+
     item('banking','Banking','case')+
     item('pricing','Pricing &amp; RGM','live')+
     item('finance','Finance','professional')+
     item('project-economics','Project Economics','professional')+
-    item('engineering','Engineering &amp; Innovation','professional')+
     item('ai-transformation','AI Transformation','secondary')+
     item('supply-chain','Supply Chain','planned');
 })();
