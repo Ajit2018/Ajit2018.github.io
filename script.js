@@ -161,3 +161,100 @@ if(tabPanels.length){
   window.addEventListener('popstate',()=>activateTab(tabFromHash()));
   window.addEventListener('hashchange',()=>activateTab(tabFromHash()));
 }
+
+
+/* Portfolio analytics instrumentation.
+   GA4 remains disabled until PORTFOLIO_ANALYTICS_ID is set to a valid G-... id.
+   No personally identifiable information is collected by this code. */
+(function portfolioAnalytics(){
+  const measurementId = window.PORTFOLIO_ANALYTICS_ID || '';
+  const validId = /^G-[A-Z0-9]+$/i.test(measurementId);
+  if(!validId) return;
+
+  const params = new URLSearchParams(location.search);
+  const campaignKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+  const incoming = {};
+  campaignKeys.forEach(key=>{ const value=params.get(key); if(value) incoming[key]=value; });
+  if(Object.keys(incoming).length){
+    try{ sessionStorage.setItem('aps_portfolio_campaign',JSON.stringify(incoming)); }catch(_e){}
+  }
+  let campaign = incoming;
+  if(!Object.keys(campaign).length){
+    try{ campaign=JSON.parse(sessionStorage.getItem('aps_portfolio_campaign')||'{}')||{}; }catch(_e){ campaign={}; }
+  }
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = window.gtag || gtag;
+
+  const tag=document.createElement('script');
+  tag.async=true;
+  tag.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(measurementId);
+  document.head.appendChild(tag);
+
+  gtag('js',new Date());
+  gtag('config',measurementId,{
+    anonymize_ip:true,
+    send_page_view:true,
+    page_path:location.pathname+location.search+location.hash
+  });
+
+  function pageName(){
+    const file=(location.pathname.split('/').pop()||'index.html').replace(/\.html$/,'');
+    const section=location.hash.replace(/^#/,'')||'overview';
+    return file+':'+section;
+  }
+
+  function baseEvent(){
+    return {
+      page_name:pageName(),
+      page_path:location.pathname+location.hash,
+      campaign_source:campaign.utm_source||'(direct)',
+      campaign_medium:campaign.utm_medium||'(none)',
+      campaign_name:campaign.utm_campaign||'(none)'
+    };
+  }
+
+  function track(name,extra){
+    gtag('event',name,Object.assign(baseEvent(),extra||{}));
+  }
+  window.apsTrack = track;
+
+  track('portfolio_view');
+
+  document.addEventListener('click',event=>{
+    const a=event.target.closest('a[href]');
+    if(!a) return;
+    let target;
+    try{ target=new URL(a.href,location.href); }catch(_e){ return; }
+    const label=(a.textContent||'').trim().replace(/\s+/g,' ').slice(0,120);
+    const sameHost=target.hostname===location.hostname;
+    if(target.protocol==='mailto:'){
+      track('contact_click',{contact_method:'email',link_label:label});
+    }else if(!sameHost && /^https?:$/.test(target.protocol)){
+      track('outbound_click',{link_domain:target.hostname,link_url:target.href,link_label:label});
+    }else if(sameHost){
+      track('internal_navigation',{destination_path:target.pathname+target.hash,link_label:label});
+    }
+  },{capture:true});
+
+  let lastHash=location.hash;
+  function trackVirtualView(){
+    if(location.hash===lastHash) return;
+    lastHash=location.hash;
+    track('portfolio_section_view',{section:location.hash.replace(/^#/,'')||'overview'});
+  }
+  window.addEventListener('hashchange',trackVirtualView);
+  window.addEventListener('popstate',trackVirtualView);
+
+  let maxDepth=0;
+  function depth(){
+    const doc=document.documentElement;
+    const scrollable=Math.max(doc.scrollHeight-innerHeight,1);
+    const pct=Math.min(100,Math.round((scrollY/scrollable)*100));
+    [25,50,75,90].forEach(mark=>{
+      if(pct>=mark && maxDepth<mark){ maxDepth=mark; track('scroll_depth',{percent_scrolled:mark}); }
+    });
+  }
+  window.addEventListener('scroll',depth,{passive:true});
+})();
